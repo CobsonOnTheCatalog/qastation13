@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Blowing on hot things no longer works while dead.
-- bugfix: Putting out hot items no longer works while dead or far away.
