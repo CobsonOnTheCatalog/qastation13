@@ -1,0 +1,6 @@
+author: Kurfursten
+delete-after: true
+changes:
+- bugfix: Rather than defaulting you to human when you select skellington or skelevox
+    out of season, the game will instead spawn you as a plasmaman or vox. This also
+    avoids some unfortunate latespawns for skelevox traders after October.
