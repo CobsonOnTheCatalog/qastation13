@@ -1,4 +1,0 @@
-author: Kurfursten
-delete-after: true
-changes:
-- bugfix: Fixed battlemat picking up, but for real.
