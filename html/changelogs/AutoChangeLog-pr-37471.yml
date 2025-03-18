@@ -1,8 +1,0 @@
-author: mentgah
-delete-after: true
-changes:
-- bugfix: Fixed a bug in synths that made the play button stay toggled on even when
-    not playing music.
-- tweak: Drag directional synth sprites are now all consistent with each other.
-- tweak: The synth is now able to be wrenched/unwrenched instantly.
-- tweak: The synth starts unanchored.

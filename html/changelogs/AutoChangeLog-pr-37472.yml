@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- tweak: Arcane tampered closets now bless and untamper themselves if unwelded or
-    resisted out of.
