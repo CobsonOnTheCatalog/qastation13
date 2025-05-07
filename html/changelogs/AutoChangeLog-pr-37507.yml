@@ -1,0 +1,5 @@
+author: ShiftyRail
+delete-after: true
+changes:
+- bugfix: Fixes Simpolinol having seemingly no effects on non-simple mobs. It should
+    correctly have interesting random effects now.
