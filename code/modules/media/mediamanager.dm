@@ -176,6 +176,7 @@ var/const/PLAYER_OLD_HTML=PLAYER_HTML
 	owner << browse(HTML_SKELETON(playerstyle), "window=[window_odd]")
 	owner << browse(null, "window=[window_even]")
 	owner << browse(HTML_SKELETON(playerstyle), "window=[window_even]")
+
 	//owner << browse(null, "window=[window_debug]")
 	//owner << browse(HTML_SKELETON(playerstyle), "window=[window_debug]")
 
