@@ -73,9 +73,12 @@
 
 /atom/movable/Destroy()
 	var/turf/T
-	if (opacity && isturf(loc))
-		T = loc // recalc_atom_opacity() is called later on this
+	if (isturf(loc) && opacity)
+		T = loc
 		T.reconsider_lights()
+	var/turf/simulated/S = get_turf(src)
+	if (istype(S))
+		S.zone?.burnable_atoms -= src
 
 	if(materials)
 		QDEL_NULL(materials)
@@ -106,7 +109,7 @@
 	for(var/atom/movable/AM in src)
 		qdel(AM)
 
-	..()
+	. = ..()
 
 /atom/movable/Del()
 	if (gcDestroyed)
