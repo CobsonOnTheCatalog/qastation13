@@ -689,7 +689,7 @@ var/list/admin_verbs_mod = list(
 
 	var/turf/epicenter = mob.loc
 	var/list/choices = list("Small EMP (1,2)", "Medium EMP (2,4)", "Big EMP (4,8)", "Custom EMP")
-	var/choice = input("What size EMP would you like to produce?") in choices | null
+	var/choice = input("What size EMP would you like to produce?") as null|anything in choices
 	switch(choice)
 		if(null)
 			return 0
