@@ -757,12 +757,10 @@
 	},
 /area/hydroponics)
 "aoI" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	name = "reinforced one-way window";
-	one_way = 1
-	},
 /obj/machinery/vending/engivend,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/simulated/floor,
 /area/engineering/engine)
 "apc" = (
@@ -1569,10 +1567,14 @@
 /turf/space/transit/east,
 /area)
 "aEz" = (
-/obj/structure/cable/yellow,
 /obj/machinery/air_sensor{
 	id_tag = "tcomms_sensor";
 	metrics_monitored = list("pressure", "temperature", "oxygen", "plasma", "nitrogen", "carbon_dioxide")
+	},
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/server,
 /area/tcomms/chamber)
@@ -2127,6 +2129,7 @@
 /obj/item/weapon/folder/red,
 /obj/item/weapon/pen,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/recharger,
 /turf/simulated/floor,
 /area/security/main)
 "aRn" = (
@@ -2278,9 +2281,7 @@
 /obj/item/device/radio/headset/headset_medsci,
 /obj/item/device/flashlight/pen,
 /obj/structure/window/reinforced{
-	dir = 8;
-	name = "reinforced one-way window";
-	one_way = 1
+	dir = 8
 	},
 /turf/simulated/floor{
 	icon_state = "white"
@@ -2496,6 +2497,7 @@
 /area/security/brig)
 "aXT" = (
 /obj/machinery/computer/diseasesplicer,
+/obj/machinery/light,
 /turf/simulated/floor{
 	icon_state = "whitegreen"
 	},
@@ -9020,6 +9022,9 @@
 	},
 /obj/structure/bed/roller,
 /obj/machinery/iv_drip,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -10865,6 +10870,9 @@
 "elU" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
 	},
 /turf/simulated/floor,
 /area/medical/genetics)
@@ -14973,9 +14981,6 @@
 	icon_state = "dark"
 	},
 /area/science/server)
-"fXg" = (
-/turf/unsimulated/floor/jungle/grass,
-/area/medical/virology)
 "fXH" = (
 /turf/simulated/floor{
 	dir = 1;
@@ -15694,6 +15699,10 @@
 	pixel_x = -24
 	},
 /obj/machinery/telecomms/server/presets/engineering,
+/obj/structure/cable/yellow{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/server,
 /area/tcomms/chamber)
 "glI" = (
@@ -16922,6 +16931,10 @@
 /area/science/robotics)
 "gMd" = (
 /obj/structure/table,
+/obj/machinery/light/small{
+	dir = 8;
+	flickering = 1
+	},
 /turf/simulated/floor,
 /area/medical/virology)
 "gMk" = (
@@ -17165,6 +17178,15 @@
 	icon_state = "whitegreen"
 	},
 /area/medical/medbay)
+"gRF" = (
+/obj/machinery/recharge_station,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/construction/mommi_nest)
 "gSc" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	canSpawnMice = 0;
@@ -19072,14 +19094,12 @@
 	},
 /area/centcom/test)
 "hGT" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	name = "reinforced one-way window";
-	one_way = 1
-	},
 /obj/structure/closet/secure_closet/engineering_welding,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
 	},
 /turf/simulated/floor,
 /area/engineering/engine)
@@ -20557,6 +20577,9 @@
 	pixel_x = -2;
 	pixel_y = -1
 	},
+/obj/machinery/recharger{
+	pixel_y = 11
+	},
 /turf/simulated/floor,
 /area/mine/eva)
 "inX" = (
@@ -21542,17 +21565,11 @@
 /turf/simulated/floor,
 /area/teleporter)
 "iKK" = (
-/obj/structure/window/reinforced{
-	name = "reinforced one-way window";
-	one_way = 1;
-	dir = 4
-	},
-/obj/structure/window/reinforced{
+/obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/grille,
-/turf/simulated,
-/area/construction/mommi_nest)
+/turf/simulated/floor/wood,
+/area/library)
 "iLb" = (
 /obj/structure/shuttle/engine/propulsion/right,
 /turf/space,
@@ -21754,9 +21771,6 @@
 /turf/simulated/floor/shuttle/brig,
 /area/shuttle/escape/centcom)
 "iPE" = (
-/obj/structure/window/reinforced{
-	one_way = 1
-	},
 /obj/structure/table,
 /obj/item/weapon/storage/lockbox/diskettebox/open/cloning{
 	pixel_x = 2;
@@ -22235,15 +22249,10 @@
 	},
 /area/centcom/control)
 "iYc" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	name = "reinforced one-way window";
-	one_way = 1
-	},
-/obj/structure/window/reinforced{
-	one_way = 1
-	},
 /obj/structure/closet/secure_closet/medical1,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -23035,6 +23044,11 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8;
 	initialize_directions = 11
+	},
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -24389,6 +24403,9 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 25
 	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/wood,
 /area/library)
 "jRR" = (
@@ -25004,6 +25021,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
+/obj/machinery/door/window{
+	dir = 1;
+	name = "Monkey Pen";
+	req_access_txt = "9"
+	},
 /turf/simulated/floor,
 /area/medical/genetics)
 "kfy" = (
@@ -25012,12 +25034,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	name = "reinforced one-way window";
-	one_way = 1
-	},
 /obj/machinery/vending/tool,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/simulated/floor,
 /area/engineering/engine)
 "kfF" = (
@@ -27177,9 +27197,15 @@
 /turf/simulated/floor,
 /area/tdome)
 "lfq" = (
-/obj/structure/ladder/jungle_tunnel/mapped,
-/turf/unsimulated/floor/jungle/dirt,
-/area/medical/virology)
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "whitegreen"
+	},
+/area/medical/sleeper)
 "lfB" = (
 /obj/structure/cable/orange{
 	icon_state = "4-8";
@@ -31961,9 +31987,16 @@
 /turf/simulated/floor/server,
 /area/science/server)
 "mWt" = (
-/obj/structure/grille/window_spawner/reinforced/full,
-/turf/space,
-/area/bridge)
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/medical/sleeper)
 "mWv" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor{
@@ -34878,6 +34911,9 @@
 	dir = 1;
 	on = 1
 	},
+/obj/machinery/vending/medical{
+	pixel_x = -2
+	},
 /turf/simulated/floor{
 	icon_state = "whitegreen"
 	},
@@ -35220,15 +35256,9 @@
 	},
 /area/science/hallway)
 "oqo" = (
-/obj/structure/window/reinforced{
-	name = "reinforced one-way window";
-	one_way = 1;
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/obj/structure/grille,
-/turf/simulated,
-/area/construction/mommi_nest)
+/obj/structure/closet/jungle_first_aid,
+/turf/unsimulated/floor/jungle/grass/no_flora,
+/area/surface/jungle/fenced)
 "oqz" = (
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden,
 /turf/simulated/floor/vox{
@@ -36543,6 +36573,7 @@
 /obj/structure/table,
 /obj/item/weapon/folder/red,
 /obj/item/weapon/pen,
+/obj/machinery/recharger,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "red"
@@ -39168,6 +39199,9 @@
 /area/storage/tech)
 "pYz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -39426,17 +39460,15 @@
 	d1 = 4;
 	d2 = 8
 	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	name = "reinforced one-way window";
-	one_way = 1
-	},
 /obj/structure/closet/secure_closet/engineering_welding,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
 	},
 /turf/simulated/floor,
 /area/engineering/engine)
@@ -42279,11 +42311,6 @@
 	},
 /area/centcom/living)
 "rok" = (
-/obj/machinery/door/window{
-	dir = 2;
-	name = "Monkey Pen";
-	req_access_txt = "9"
-	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 8
 	},
@@ -43442,9 +43469,6 @@
 /turf/simulated/floor,
 /area/supply/lobby)
 "rJR" = (
-/obj/structure/window/reinforced{
-	one_way = 1
-	},
 /obj/structure/table,
 /turf/simulated/floor{
 	icon_state = "white"
@@ -43735,11 +43759,6 @@
 	},
 /area/shuttle/escape/centcom)
 "rSe" = (
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
@@ -44878,9 +44897,6 @@
 /turf/simulated/floor,
 /area/engineering/atmos)
 "sox" = (
-/obj/machinery/vending/medical{
-	pixel_x = -2
-	},
 /obj/machinery/light{
 	dir = 8
 	},
@@ -45088,6 +45104,9 @@
 /obj/structure/closet/secure_closet/personal/patient,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
 	},
 /turf/simulated/floor{
 	icon_state = "white"
@@ -46962,6 +46981,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "whitegreen"
@@ -47807,7 +47829,7 @@
 	dir = 1
 	},
 /obj/structure/closet/jungle_first_aid,
-/turf/unsimulated/floor/jungle/grass,
+/turf/unsimulated/floor/jungle/grass/no_flora,
 /area/surface/jungle/fenced)
 "txP" = (
 /obj/structure/sign/securearea{
@@ -47881,20 +47903,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/surface/jungle/zoned/outdoor_bar)
-"tzp" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/turf/simulated/floor{
-	icon_state = "white"
-	},
-/area/medical/sleeper)
 "tzS" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor{
@@ -48457,16 +48465,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/simulated/floor/plating/vox,
 /area/vox_trading_post/atmos)
-"tLZ" = (
-/obj/structure/window/reinforced{
-	name = "reinforced one-way window";
-	one_way = 1;
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/obj/structure/grille,
-/turf/simulated,
-/area/crew_quarters/sleep)
 "tMe" = (
 /obj/structure/table,
 /obj/item/device/robotanalyzer,
@@ -48653,6 +48651,9 @@
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8;
 	on = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 1
 	},
 /turf/simulated/floor,
 /area/medical/genetics)
@@ -50825,8 +50826,16 @@
 /turf/simulated/floor,
 /area/research_outpost/entry)
 "uPk" = (
-/turf/unsimulated/floor/jungle/grass,
-/area/medical/sleeper)
+/mob/living/carbon/monkey,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault";
+	tag = "icon-vault (NORTHEAST)"
+	},
+/area/medical/virology)
 "uPq" = (
 /obj/structure/bed/chair/wood/normal,
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
@@ -51889,6 +51898,7 @@
 	},
 /area/tcomms/storage)
 "viU" = (
+/obj/machinery/smartfridge/bloodbank/filled,
 /turf/simulated/floor{
 	icon_state = "whitegreen"
 	},
@@ -54841,9 +54851,6 @@
 /area/medical/medbay)
 "wqd" = (
 /obj/machinery/dna_scannernew,
-/obj/structure/window/reinforced{
-	one_way = 1
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
@@ -55087,6 +55094,14 @@
 	},
 /turf/simulated/floor,
 /area/science/hallway)
+"wxJ" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/medical/sleeper)
 "wxT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable/yellow{
@@ -100240,7 +100255,7 @@ wld
 wld
 wld
 wld
-ndk
+oqo
 rIU
 mNu
 oJc
@@ -118540,7 +118555,7 @@ qhG
 qhG
 wDw
 wDw
-wDw
+qhG
 wDw
 wDw
 qhG
@@ -118892,7 +118907,7 @@ qhG
 rXq
 mpz
 jfO
-mpz
+iKK
 trS
 mpz
 lis
@@ -120000,9 +120015,9 @@ pcA
 twF
 cBN
 xrO
-xrO
-xrO
-tzp
+mWt
+sRv
+xOd
 wpm
 sRv
 qar
@@ -120353,7 +120368,7 @@ rev
 qZg
 qZg
 jmF
-qZg
+lfq
 rSe
 cWF
 jFN
@@ -122817,7 +122832,7 @@ viU
 dKH
 nqp
 nqp
-nqp
+uPk
 nqp
 nIP
 gMd
@@ -123164,7 +123179,7 @@ vbp
 iuS
 xOd
 wpm
-qar
+wxJ
 oiR
 dKH
 aeN
@@ -125271,7 +125286,7 @@ cGl
 jrq
 fup
 fFG
-sRS
+xfJ
 vzk
 oIh
 nqQ
@@ -125623,7 +125638,7 @@ pIX
 pIX
 pIX
 geE
-xfJ
+sRS
 dgu
 nqQ
 nqQ
@@ -128086,15 +128101,15 @@ pIX
 pIX
 pIX
 pIX
-uPk
-uPk
-uPk
-uPk
-uPk
-uPk
-fXg
-fXg
-lfq
+wld
+wld
+wld
+wld
+wld
+wld
+wld
+wld
+quU
 dKH
 nIP
 nIP
@@ -129747,7 +129762,7 @@ lIK
 lIK
 lIK
 lIK
-tLZ
+jAP
 bWb
 csj
 jAP
@@ -130099,7 +130114,7 @@ lIK
 lIK
 lIK
 lIK
-tLZ
+jAP
 xvk
 xvk
 krS
@@ -130451,7 +130466,7 @@ lIK
 lIK
 lIK
 lIK
-tLZ
+jAP
 aKk
 aKk
 jAP
@@ -131879,7 +131894,7 @@ jAP
 wmy
 yaH
 jAP
-ndk
+oqo
 psY
 wld
 iVX
@@ -132578,7 +132593,7 @@ lIK
 lIK
 lIK
 lIK
-oqo
+gLf
 viu
 uus
 adO
@@ -132930,7 +132945,7 @@ lIK
 lIK
 lIK
 lIK
-oqo
+gLf
 viu
 uus
 dsG
@@ -133282,8 +133297,8 @@ lIK
 lIK
 lIK
 lIK
-oqo
-viu
+gLf
+gRF
 uus
 dsG
 ixG
@@ -133634,7 +133649,7 @@ lIK
 lIK
 lIK
 lIK
-oqo
+gLf
 viu
 uus
 dsG
@@ -133986,7 +134001,7 @@ lIK
 lIK
 lIK
 lIK
-oqo
+gLf
 mVO
 xWe
 mwn
@@ -134339,9 +134354,9 @@ lIK
 pjM
 lIK
 gLf
-iKK
-iKK
-iKK
+gLf
+gLf
+gLf
 dMN
 dMN
 dMN
@@ -135429,9 +135444,9 @@ hhQ
 xIq
 ldM
 gts
-mWt
+lBd
 uFk
-mWt
+lBd
 mSW
 bLU
 efR
@@ -138968,7 +138983,7 @@ kep
 mYY
 wPe
 wPe
-ndk
+oqo
 wld
 wld
 xor
