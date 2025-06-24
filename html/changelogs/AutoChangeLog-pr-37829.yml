@@ -1,0 +1,4 @@
+author: adacovsk
+delete-after: true
+changes:
+- bugfix: ghosts can't anger the bees/hornets via nests
