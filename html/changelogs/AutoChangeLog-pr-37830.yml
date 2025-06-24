@@ -1,0 +1,4 @@
+author: adacovsk
+delete-after: true
+changes:
+- bugfix: no more infinite zombies from corpses in wheelchairs
