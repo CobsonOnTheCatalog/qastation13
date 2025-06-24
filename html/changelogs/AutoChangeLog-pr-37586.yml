@@ -1,0 +1,7 @@
+author: RealestEstate
+delete-after: true
+changes:
+- rscadd: Mech bay recharge ports were given directional sprites.
+- rscadd: You can now rearrange the mech recharge bay any way you like as long as
+    the recharge port is facing the floor station. You must use the console to link
+    the devices together should you rearrange them.
