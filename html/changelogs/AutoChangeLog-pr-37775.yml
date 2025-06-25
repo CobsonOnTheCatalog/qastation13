@@ -1,0 +1,7 @@
+author: Eneocho
+delete-after: true
+changes:
+- rscadd: Blacksmithing quality affects tool speed, with higher than average (4) quality
+    working faster, and lower than average working slower. Pickaxes mine 3x slower
+    on the worst quality and as fast as a diamond drill at the best quality. Hammers
+    are 1/10th of a second faster (or slower) than the average per quality level.
