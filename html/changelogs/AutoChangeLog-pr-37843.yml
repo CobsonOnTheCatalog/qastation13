@@ -1,0 +1,4 @@
+author: adacovsk
+delete-after: true
+changes:
+- bugfix: clownshoes work again
