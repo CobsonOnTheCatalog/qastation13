@@ -158,12 +158,11 @@
 	_color = "clown"
 	species_fit = list(INSECT_SHAPED, VOX_SHAPED)
 	footprint_type = /obj/effect/decal/cleanable/blood/tracks/footprints/clown
-
-	step_sound = "clownstep"
 	footsteps_range = 0
 
 /obj/item/clothing/shoes/clown_shoes/New()
 	..()
+	step_sound = sounds_clownstep
 	if(Holiday == APRIL_FOOLS_DAY)
 		modulo_steps = 1 //Honk on every step
 
@@ -282,6 +281,7 @@
 
 		if(random_sound)
 			step_sound = sound_list[pick(sound_list)]
+
 	..()
 
 /obj/item/clothing/shoes/clown_shoes/advanced/emag_act(var/mob/user) //Causes the shoes to play a sound every step instead of 2
@@ -617,7 +617,10 @@
 	footprint_type = /obj/effect/decal/cleanable/blood/tracks/footprints/clown
 	species_fit = list(VOX_SHAPED)
 
-	step_sound = "clownstep"
+/obj/item/clothing/shoes/clownshoespsyche/New()
+	..()
+	step_sound = sounds_clownstep
+
 
 /obj/item/clothing/shoes/clownshoespsyche/attackby(obj/item/weapon/W, mob/user)
 	..()
