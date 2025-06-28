@@ -1,0 +1,4 @@
+author: adacovsk
+delete-after: true
+changes:
+- bugfix: prevents infinite money supply with station account
