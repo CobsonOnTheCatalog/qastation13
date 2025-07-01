@@ -1,0 +1,7 @@
+author: jwhitak
+delete-after: true
+changes:
+- rscadd: Mulebot unique access flags correctly implemented, Cargo and HoP/Cap have
+    access by default.
+- tweak: Minor ID Computer fixes.
+- bugfix: Fixed several access issues and removed some unused accesses.
