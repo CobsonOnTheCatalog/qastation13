@@ -1,0 +1,5 @@
+author: CrazyAmphibian
+delete-after: true
+changes:
+- rscadd: Turfs can now act as a reagent dispenser, if the coders set it up. watch
+    out, and greys beware of water!
