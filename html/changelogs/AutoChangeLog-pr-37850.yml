@@ -1,0 +1,4 @@
+author: jwhitak
+delete-after: true
+changes:
+- bugfix: Forges quenched with water remember what fuel they had when relit.
