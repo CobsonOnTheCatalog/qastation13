@@ -1,0 +1,5 @@
+author: mentgah
+delete-after: true
+changes:
+- bugfix: Search function works again for the merch computer, security cameras, and
+    the religion menu
