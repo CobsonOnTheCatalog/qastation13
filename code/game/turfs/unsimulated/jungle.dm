@@ -66,7 +66,7 @@
 		return ..()
 		return FALSE
 	if(!construction_allowed)
-		return FALSE
+		return ..()
 	
 	if(C.type== /obj/item/stack/tile/metal) // lattice -> plating
 		var/obj/item/stack/tile/T = C
@@ -393,6 +393,9 @@ var/list/foliage_replacments=list(
 	turf_speed_multiplier=1.75
 	plane = ABOVE_OBJ_PLANE
 	DIGGING_BLOCKED = "Something tells you that this is a really bad idea."
+	turf_reagents = list(WATER=1.0)
+	reagent_interaction_flags = TURF_REAGENT_ENTER | TURF_REAGENT_FILLS_CONTAINERS
+	turf_reagent_amount = 5
 
 /turf/unsimulated/floor/jungle/water_deep
 	name="Deep Water"
@@ -402,6 +405,9 @@ var/list/foliage_replacments=list(
 	turf_speed_multiplier=2.5
 	plane = MOB_PLANE
 	DIGGING_BLOCKED = "Something tells you that this is a really bad idea."
+	turf_reagents = list(WATER=1.0)
+	reagent_interaction_flags = TURF_REAGENT_ENTER | TURF_REAGENT_FILLS_CONTAINERS
+	turf_reagent_amount = 10
 
 
 /turf/unsimulated/floor/jungle/sand
