@@ -1,0 +1,5 @@
+author: jwhitak
+delete-after: true
+changes:
+- rscadd: More medical gear fits on the medical belt, including some surgery tools
+    and blood bags.
