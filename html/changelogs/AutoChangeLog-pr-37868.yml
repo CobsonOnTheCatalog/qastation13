@@ -1,6 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Machine upgrades now add to the round end score, at the rate of 5 points
-    for every part rating above 1, per part. Removing or destroying these parts in
-    machines subtracts from this score.
