@@ -1,0 +1,5 @@
+author: jwhitak
+delete-after: true
+changes:
+- bugfix: Fixed an exploit with the account DB where someone could set the station
+    to be paid infinite money from a mysterious source.
