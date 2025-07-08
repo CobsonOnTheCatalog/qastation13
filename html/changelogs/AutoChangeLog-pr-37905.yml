@@ -1,0 +1,4 @@
+author: mentgah
+delete-after: true
+changes:
+- bugfix: Tooltips are once again visible to everyone
