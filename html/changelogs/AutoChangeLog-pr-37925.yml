@@ -1,0 +1,7 @@
+author: west3436
+delete-after: true
+changes:
+- rscadd: Added a Firefighter alt title to Atmos Technicians.
+- rscadd: Gave atmos techs two firefoam poppers in each locker.
+- rscadd: Enabled Autonomous Fire Suppression on all air alarms by default.
+- tweak: Reduced fire-starting capability of flares.
