@@ -1,5 +1,0 @@
-author: jwhitak
-delete-after: true
-changes:
-- experiment: Disabled Dynamic+, antags no longer have a infintely increasing chance
-    to be fired if they haven't fired in a while.
