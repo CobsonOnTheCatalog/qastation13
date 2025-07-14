@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: The station budget, profit and deficit are now made known to crew members
+    at the end of their shift.
