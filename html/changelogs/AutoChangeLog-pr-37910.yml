@@ -1,0 +1,6 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Crew performance now has a bearing on the well being of future stations
+    employees can be sent to, affecting camera and light quality as well as overall
+    station cleanliness.
