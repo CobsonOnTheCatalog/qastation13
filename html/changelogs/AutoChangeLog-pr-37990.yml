@@ -1,4 +1,0 @@
-author: jwhitak
-delete-after: true
-changes:
-- rscadd: Admins can directly inspect UIs now.
