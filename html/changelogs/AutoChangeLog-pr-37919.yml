@@ -1,0 +1,11 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Admins can now select all possible robot modules as a cyborg.
+- rscadd: Robot electric arms, hug modules, fire axes, hyposprays, batons, RCDs, energy
+    guns and refillable drinks now warn the player by text when shutting down from
+    lack of charge.
+- spellcheck: Cyborg light replacers now have a proper space before the amount of
+    glass generated.
+- spellcheck: Recharge stations now have consistent formatting for cell replacement
+    or upgrade information.
