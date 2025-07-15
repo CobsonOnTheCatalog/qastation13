@@ -1,0 +1,5 @@
+author: jwhitak
+delete-after: true
+changes:
+- bugfix: The Merch Computer is now affected by Does Not Tip. Buyer beware!
+- tweak: Cargo Pizzas now contain specific poisons when the station Does Not Tip.
