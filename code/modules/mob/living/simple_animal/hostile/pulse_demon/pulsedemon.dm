@@ -210,9 +210,11 @@
 		if(istype(current_power,/obj/machinery/power/battery) && draining)
 			var/obj/machinery/power/battery/current_battery = current_power
 			suckBattery(current_battery)
-		else if(istype(current_power,/obj/machinery/power/apc) && draining)
+		else if(istype(current_power,/obj/machinery/power/apc))
 			var/obj/machinery/power/apc/current_apc = current_power
-			drainAPC(current_apc)
+			if(draining)
+				drainAPC(current_apc)
+			current_apc.pulselocked = min(current_apc.pulselocked + 2, 5) //Up to 10 seconds of locking silicons out of controlling an area's machinery
 		if(current_power.avail() < amount_per_regen)
 			power_lost()
 		else
@@ -276,6 +278,7 @@
 				controlling_area = get_area(current_power)
 				PCC.Grant(src)
 				to_chat(src, "<span class='notice'>You can interact with various electronic objects in the room while connected to the APC.</span>")
+				current_apc.pulselocked = 5
 			else
 				hijackAPC(current_apc)
 			if(draining)
