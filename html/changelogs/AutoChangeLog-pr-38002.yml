@@ -1,5 +1,0 @@
-author: boy2mantwicethefam
-delete-after: true
-changes:
-- tweak: If a sufficiently filled glass breaks it will no longer coat each tile in
-    a 3x3 radius with its reagents. It will instead only coat the target and the tile.

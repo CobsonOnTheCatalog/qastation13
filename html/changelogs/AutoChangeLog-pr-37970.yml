@@ -1,7 +1,0 @@
-author: jwhitak
-delete-after: true
-changes:
-- rscdel: Swiss Army Knives from the Merch Computer cost 100, and are a random branded
-    Swiss Army Knife variety. These have different tools. Buyer beware!
-- tweak: Tools that come with the Swiss Army Knives are half the size of normal tools.
-- imageadd: 10 new Switchtool variants!
