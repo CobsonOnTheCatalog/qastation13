@@ -1,0 +1,7 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Cyborgs can now have their components upgraded with part replacers, including
+    their power cell. Their components can only be part replaced with others of a
+    higher upgrade level. This requires their cover open and wires exposed, unless
+    using a bluespace RPED.
