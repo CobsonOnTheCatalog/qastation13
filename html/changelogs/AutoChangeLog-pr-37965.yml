@@ -1,0 +1,5 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- bugfix: The Staff of Polymorph and other polymorphing effects can no longer turn
+    people into hivelord guardian broods.
