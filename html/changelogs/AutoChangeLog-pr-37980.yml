@@ -1,0 +1,4 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- tweak: Pulse Demons will no longer visibly glow when they're under 10kw charge.
