@@ -1,0 +1,4 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- rscadd: Hitting cyborgs with items will now play the item's regular hit sound.
