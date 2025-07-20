@@ -1,0 +1,5 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- rscadd: Roundstart changeling will now spawn an additional changeling when there
+    are at least 24 readied roundstart players.
