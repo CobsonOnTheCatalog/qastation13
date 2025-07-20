@@ -1,0 +1,6 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- rscadd: Pulse Demons inside APCs will lock out silicons from interfacing with machines
+    in the same area as the APC while the Pulse Demon is inside the APC and for a
+    few seconds afterwards.
