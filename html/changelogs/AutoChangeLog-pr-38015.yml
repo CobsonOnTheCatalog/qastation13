@@ -1,6 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: PDA multimessaging now supports sending messages to everyone.
-- rscadd: PDA multimessaging now supports polls, preset responses to the message that
-    gets tallied up by the original sender.
