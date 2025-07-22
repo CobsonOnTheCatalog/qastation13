@@ -1,5 +1,0 @@
-author: west3436
-delete-after: true
-changes:
-- bugfix: Fixed Autonomous Fire Suppression locking a room to the Fire Suppression
-    preset.

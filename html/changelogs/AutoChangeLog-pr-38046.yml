@@ -1,6 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Broken components now properly remove themselves from the cyborg pryout
-    list.
-- tweak: Components pried out of cyborgs now show up in player's hands if possible.
