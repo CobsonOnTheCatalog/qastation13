@@ -1,0 +1,5 @@
+author: Code-Alpha777
+delete-after: true
+changes:
+- rscadd: Added a new UI to the RUST Core Monitor
+- bugfix: Fixed a good bunch of bugs with the RUST
