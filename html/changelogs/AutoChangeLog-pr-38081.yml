@@ -1,4 +1,0 @@
-author: mentgah
-delete-after: true
-changes:
-- bugfix: Character slots now save properly again.
