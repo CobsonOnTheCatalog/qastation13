@@ -1,0 +1,5 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- bugfix: Fixed an issue where storage inventories such as from a backpack would not
+    update the inventory menu properly if the item was deleted.
