@@ -1,6 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Lockbox emagging now works again.
-- spellcheck: Lockbox descriptions no longer state being broken twice while permanently
-    overwriting the original description.
