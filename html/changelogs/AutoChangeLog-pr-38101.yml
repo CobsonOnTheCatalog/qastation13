@@ -1,4 +1,0 @@
-author: Eneocho
-delete-after: true
-changes:
-- bugfix: Untable mutagen should no longer remove the last chemical in a plant.
