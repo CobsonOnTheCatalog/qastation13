@@ -1,0 +1,5 @@
+author: west3436
+delete-after: true
+changes:
+- rscadd: Added blood splatters when shot under certain conditions.
+- imageadd: Added blood splatter sprites.
