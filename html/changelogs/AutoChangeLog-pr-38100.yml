@@ -1,6 +1,0 @@
-author: boy2mantwicethefam
-delete-after: true
-changes:
-- bugfix: Fixed a bug where the Staff of Necromancy couldn't be placed in the wizard's
-    robes.
-- tweak: Wizard robes can now carry fake wizard staves and brooms.
