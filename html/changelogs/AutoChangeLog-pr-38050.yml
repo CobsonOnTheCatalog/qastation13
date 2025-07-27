@@ -1,0 +1,10 @@
+author: jwhitak
+delete-after: true
+changes:
+- rscadd: Added new Sleeper Plugins. Available in Cargo, from Traders, in Science,
+    and by other strange rituals.
+- rscadd: 'Sleeper UIs have more quality of life functionality: Higher injection amount
+    button, info button, and will darken invalid options (such as when a patient is
+    in crit).'
+- bugfix: Scientist's Serendipity now gives more research in a fully filled glass,
+    and no longer breaks the UI by offering invalid research.
