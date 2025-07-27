@@ -1,0 +1,5 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- rscadd: The "Summon Guns" wizard purchase now has a 20% chance of playing a special
+    audio file, and a guaranteed chance to play it when guns are summoned 5 times.
