@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- bugfix: Part replacers and gadget bags can now actually hold borg components for
+    upgrades.
