@@ -1,0 +1,5 @@
+author: jwhitak
+delete-after: true
+changes:
+- rscadd: Cargo computers no longer print Central Command requests by default. Instead,
+    you can print them individually on the Requests menu.
