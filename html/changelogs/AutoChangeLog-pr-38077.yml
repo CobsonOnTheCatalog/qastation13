@@ -1,0 +1,5 @@
+author: jwhitak
+delete-after: true
+changes:
+- tweak: Cargo Party Supplies crate has been re-balanced, adding more beer and hats
+    while consolidating the contents into more organized boxes.
