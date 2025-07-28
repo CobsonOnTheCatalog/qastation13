@@ -456,7 +456,8 @@
 		return 0
 	return ..()
 
-/obj/machinery/sleeper/attackby(obj/item/weapon/obj_used, mob/user)
+//Handles installing a plugin for the specific machine, checking compatibility and other such functions.
+/obj/machinery/sleeper/proc/install_plugin(obj/item/weapon/obj_used, mob/user)
 	if(istype(obj_used, /obj/item/device/plugin))
 		if(!panel_open)
 			to_chat(user, "<span class='warning'>You need to open the maintenance panel to install this device.</span>")
@@ -501,6 +502,10 @@
 			plugins += obj_used
 			RefreshParts()
 
+/obj/machinery/sleeper/attackby(obj/item/weapon/obj_used, mob/user)
+	if(istype(obj_used, /obj/item/device/plugin))
+		install_plugin(obj_used, user)
+		return
 	if(!istype(obj_used, /obj/item/weapon/grab))
 		return ..()
 	else
@@ -764,6 +769,7 @@
 	var/mob/living/simple_animal/rampagingspacehog/sleeperclown/curse = new(loc)
 	occupant.nobreath = 15
 	occupant.forceMove(curse)
+	icon = null
 	qdel(src)
 
 /obj/machinery/sleeper/upgraded
@@ -775,6 +781,12 @@
 		/obj/item/weapon/stock_parts/manipulator/nano/pico
 	)
 
+/obj/machinery/sleeper/clown
+	name = "clown sleeper"
+
+/obj/machinery/sleeper/clown/New()
+	plugins += new /obj/item/device/plugin/sleeper/clown()
+	..()
 
 /////////////////////////////////////////
 // MANCROWAVE
@@ -960,6 +972,10 @@
 					H.GALize()
 			go_out()
 		update_icon()
+
+/obj/machinery/sleeper/mancrowave/install_plugin(obj/item/weapon/obj_used, mob/user)
+	//does not accept plugins
+	return
 
 /obj/machinery/sleeper/mancrowave/galo
 	name = "tanning bed"
