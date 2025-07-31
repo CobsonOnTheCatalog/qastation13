@@ -1,0 +1,6 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Mr. V.A.L.I.D portable threat detectors now log anyone passing them whether
+    clear, suspicious or a threat, with clear logging turned off by default. All logging
+    can be enabled or disabled with valid ID.
