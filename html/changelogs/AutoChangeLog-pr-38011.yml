@@ -1,0 +1,11 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: Sinks and toilet cisterns now dissolve things placed in them, if their reagent
+    is capable of it, whether it be acid on normal items or water on gray items.
+- tweak: Gloves now protect grays from burning their hands on water sinks.
+- tweak: Acid sinks now properly fill items with sulphuric acid instead of water,
+    provided they don't just melt first.
+- tweak: Acid sinks now use progress bars like regular sinks.
+- spellcheck: Sinks now properly say if the running liquid is water or acid.
+- bugfix: Showers no longer have mist if they are on colder temperatures.
