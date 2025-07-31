@@ -1,0 +1,6 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- experiment: The roundstart timer no longer ticks down if no players are online,
+    and resets when players join after none being online.
+- bugfix: All delays to roundstart now properly leave the station time at 12:00 afterwards.
