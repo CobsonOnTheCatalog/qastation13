@@ -1,0 +1,8 @@
+author: jwhitak
+delete-after: true
+changes:
+- rscadd: Heating chemicals with hand tools now takes time, and automatically repeats
+    itself every two seconds. Values have been adjusted to keep this roughly equal
+    to spam-clicking.
+- bugfix: Plasma-fueled welding tools deal more damage.
+- bugfix: Welding tools now have their proper sharpness flags set when turned on.
