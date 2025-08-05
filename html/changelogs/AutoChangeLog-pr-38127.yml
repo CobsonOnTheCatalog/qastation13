@@ -1,0 +1,5 @@
+author: west3436
+delete-after: true
+changes:
+- bugfix: Fixed blood splatters failing to despawn.
+- bugfix: Fixed blood splatters spawning in space.
