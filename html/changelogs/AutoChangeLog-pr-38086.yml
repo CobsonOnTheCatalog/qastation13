@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Adds new deadly-classed stage 4 symptom, loneliness syndrome. Players affected
+    will be unable to perceive or hear any other mobs at all.
