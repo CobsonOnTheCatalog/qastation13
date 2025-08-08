@@ -1,7 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: If a fire source is in an offhand, and on harm intent, spray bottles with
-    a valid fuel inside them will create a small jet of fire in the desired direction.
-    Be sure to wear gloves while operating, as this also heats the spray bottle a
-    bit.

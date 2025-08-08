@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Cyborg recharge stations now show the mob inside, cell charge and upgrades
-    if possible, on examine.
