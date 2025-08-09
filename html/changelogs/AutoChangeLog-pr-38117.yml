@@ -1,6 +1,0 @@
-author: boy2mantwicethefam
-delete-after: true
-changes:
-- tweak: Simple animals such as mice and other creatures will now be shown intermediary
-    temperature states instead of only feeling the cold or heat when it is already
-    damaging them.
