@@ -1,0 +1,6 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- bugfix: Fixed a bug where monkeys turned into humans via genetics took extra time
+    to transform and would be invisible for a few seconds. They should now be properly
+    interacted with after 2.2 seconds.
