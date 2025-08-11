@@ -1,0 +1,5 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- bugfix: Fixed a bug where security camera consoles that were sabotaged by a malfunctioning
+    AI could see if an APC was hacked by an AI if the lights were low enough.
