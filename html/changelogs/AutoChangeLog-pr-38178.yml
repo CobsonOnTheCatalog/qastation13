@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Mr. V.A.L.I.D. portable threat detectors now properly toggle and clear logging
-    for each category.
