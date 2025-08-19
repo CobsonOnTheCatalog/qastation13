@@ -1,8 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Signalers now play an actual sound when activated. This can be disabled
-    in their settings.
-- rscadd: Timers now play a countdown tick sound. This also has an option to increase
-    in speed and pitch near the end, with both being on by default. This tick can
-    also be disabled in settings.
