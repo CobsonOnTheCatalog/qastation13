@@ -1,0 +1,9 @@
+author: DeityLink
+delete-after: true
+changes:
+- tweak: Mice now wake up when you step on them, and have visible messages when they
+    take a nap or wake up.
+- tweak: Stepping over mice while walking lets you "carefully step over them", preventing
+    them from squeaking, waking up, and more importantly, contracting their diseases.
+- bugfix: Fixed walking over a mouse checking whether the mouse was lying down instead
+    of the human to know whether to check sterility of the human's feet or torso.
