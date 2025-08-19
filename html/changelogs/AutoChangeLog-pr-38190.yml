@@ -1,0 +1,6 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: All kinds of floor tiles can now be click dragged, not just metal. This includes
+    placement on platings or lattices, where possible for each type.
+- bugfix: Plasteel tile placement should now show the proper cursor image.
