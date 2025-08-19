@@ -1,0 +1,5 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- tweak: The game will no longer fire random events if the server has either no players
+    online or no living players.
