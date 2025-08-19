@@ -1,0 +1,6 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- bugfix: Fixed a bug where if a mob was somehow nullspaced while still alive a shard
+    would never explode from instability. This bug happened because it was trying
+    to get a value out of a mob's turf, which did not exist because it was nullspaced.
