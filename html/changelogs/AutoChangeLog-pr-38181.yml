@@ -1,6 +1,0 @@
-author: Eneocho
-delete-after: true
-changes:
-- rscadd: Gym Rats, Pompadour Rats and ROID RATS will now notice that standing up
-    lets them punch a fair bit harder at the cost of slower walking speed, and viceversa
-    when laying down on all fours, with faster movement but weaker hits.
