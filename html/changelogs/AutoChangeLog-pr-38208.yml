@@ -1,0 +1,7 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- bugfix: Fixed an oversight where an implanted person could become a head revolutionary.
+    This could happen if a candidate was implanted within the first few minutes of
+    the round.
+- tweak: People who are being arrested should no longer be valid for being head revolutionaries.
