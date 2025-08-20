@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Admin fax reponses can now come with preset formatting, or blank if they
-    prefer.

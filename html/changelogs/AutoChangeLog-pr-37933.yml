@@ -1,6 +1,0 @@
-author: Inorien
-delete-after: true
-changes:
-- rscadd: Sound system v2 bringing client-level sound management
-- bugfix: Fixed all known and unknown occurrences of sound issues arising from mob
-    changes

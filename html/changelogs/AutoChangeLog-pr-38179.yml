@@ -1,6 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Clown waterflowers can now actually be attached to clothing, and used from
-    there.
-- spellcheck: De-capitalizes water flowers.
