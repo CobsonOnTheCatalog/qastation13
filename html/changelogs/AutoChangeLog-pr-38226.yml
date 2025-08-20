@@ -1,7 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Pipes can now be painted transparent and back with an RPD. Transparent pipes
-    show any N2O or plasma in them, visually or on examine.
-- tweak: RPDs can now mass paint pipe networks with over 500 pipes in it.
-- spellcheck: Pipe painting can now show proper names of colors painted, if available.
