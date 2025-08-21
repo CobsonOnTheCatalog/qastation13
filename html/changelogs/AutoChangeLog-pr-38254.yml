@@ -1,4 +1,0 @@
-author: Inorien
-delete-after: true
-changes:
-- bugfix: Fixed a bug that resulted in non-AI being unable to hear sound system sounds
