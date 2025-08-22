@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- spellcheck: The rescued pets score line now properly places the line break after
-    the right bracket.
