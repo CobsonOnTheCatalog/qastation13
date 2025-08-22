@@ -1,4 +1,0 @@
-author: Eneocho
-delete-after: true
-changes:
-- bugfix: Non-metal tables should now disassemble into their actual material cost.
