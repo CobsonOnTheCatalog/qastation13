@@ -1,0 +1,6 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- tweak: Freezers and heaters will now cool/heat gases faster when upgraded with components.
+    In addition, their possible minimum/maximum temperatures will become much more
+    extreme when upgraded with rare tier 4 parts.
