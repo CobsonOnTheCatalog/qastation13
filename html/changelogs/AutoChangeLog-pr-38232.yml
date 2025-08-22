@@ -1,0 +1,8 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- rscadd: Exosuit Fabricators and Spacepod Fabricators will now provide feedback messages
+    after syncing over whether the research they have acquired has improved them.
+- bugfix: Fixed a 7 year old bug where Materials and Data research did not affect
+    the Protolathe nor the Circuit Imprinter. Now they will both benefit from reduced
+    material costs and faster production granted by research.
