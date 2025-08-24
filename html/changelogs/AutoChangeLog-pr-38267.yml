@@ -1,4 +1,0 @@
-author: nervere
-delete-after: true
-changes:
-- bugfix: Xenobiology's "slime resurrection serums" now properly work on slime extracts.
