@@ -1,0 +1,7 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Traders have arrived with new miner/cargo themed goods from the lost world
+    of Lemuria.
+- rscadd: "...also as a side effect of the digsite depressor's existence, measuring\
+    \ tapes can now measure the depth sand has been dug."
