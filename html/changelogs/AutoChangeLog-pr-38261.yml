@@ -1,0 +1,4 @@
+author: PrimeDSS13
+delete-after: true
+changes:
+- tweak: Engineering suit rad resistance reduced from 80% to 50%, pre-change value.
