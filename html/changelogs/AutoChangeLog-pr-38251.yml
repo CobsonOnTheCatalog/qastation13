@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: The "capture skulls" antag objective no longer asks for more than the player
-    population at time of assignment.
