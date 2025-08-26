@@ -1,6 +1,0 @@
-author: Eneocho
-delete-after: true
-changes:
-- rscadd: Nanotrasen Engineers patched a faulty sensor on Fission Reactor controllers,
-    letting them turn Plasma into Phazon once again, at the original rate (20u Plasma
-    per 1u Phazon, at a heavy time investment).
