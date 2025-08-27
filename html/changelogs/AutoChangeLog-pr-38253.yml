@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Blueprints and construction permits can now create rooms on the unexplored
-    parts of the mine.
