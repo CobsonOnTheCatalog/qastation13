@@ -1,0 +1,6 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: The engineering secure storage blast doors on Defficiency and Asteroid stations
+    now start closed, in line with other maps.
+- tweak: Defficiency's engineering secure storage blast doors now properly have firelocks.
