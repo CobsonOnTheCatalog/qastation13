@@ -1,6 +1,0 @@
-author: boy2mantwicethefam
-delete-after: true
-changes:
-- bugfix: Material synthesizers are now limited to only producing up to 50 sheets
-    of resources instead of 60 in order to prevent stack sizes that are greater than
-    50.
