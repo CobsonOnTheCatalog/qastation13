@@ -1,0 +1,4 @@
+author: jwhitak
+delete-after: true
+changes:
+- bugfix: Switchtool multitools can now access the multitool menu.
