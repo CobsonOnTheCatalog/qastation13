@@ -1,0 +1,4 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- bugfix: Depressed digsites no longer spawn infinite large artifacts from digging.
