@@ -1,5 +1,0 @@
-author: mentgah
-delete-after: true
-changes:
-- bugfix: Tooltips are updated and shouldn't be laggy or get stuck anymore. Thanks,
-    goonstation!

@@ -1,5 +1,0 @@
-author: Inorien
-delete-after: true
-changes:
-- bugfix: Cryo bubbles should no longer get stuck audible when cryo is destroyed
-- bugfix: Clean up some nullref retentions when moving near sound emitters
