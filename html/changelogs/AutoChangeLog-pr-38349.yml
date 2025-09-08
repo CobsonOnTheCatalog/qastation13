@@ -1,0 +1,4 @@
+author: jwhitak
+delete-after: true
+changes:
+- bugfix: There's no longer a 15% of spawning rocky debris on every tile on the roid.
