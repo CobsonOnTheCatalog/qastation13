@@ -1,6 +1,0 @@
-author: jwhitak
-delete-after: true
-changes:
-- rscadd: Fire tractors are now available at Cargo under Supplies for 80 credits.
-- bugfix: Cargo carts should no longer randomly disconnect when bumping into opening
-    airlocks.
