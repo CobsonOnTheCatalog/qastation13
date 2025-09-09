@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: Automatic ore loaders can now have their ore loading state toggled by the
+    item usage hotkey, but only if no ores are loaded.
