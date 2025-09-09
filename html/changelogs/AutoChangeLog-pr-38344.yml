@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: The "check power connections" debug admin verb in the mapping tab now checks
-    for power machinery terminals with no wire knot underneath.
