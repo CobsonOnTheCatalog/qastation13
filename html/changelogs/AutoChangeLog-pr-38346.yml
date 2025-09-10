@@ -1,0 +1,21 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- spellcheck: Virtually all spaces between letters and ellipses should be eliminated
+    now.
+- spellcheck: Nanodictionaries no longer have an extra full stop printed when language
+    learning cannot be done.
+- spellcheck: Langstroth hives no longer show an extra s after "bees" in examination.
+- spellcheck: Agent ID card copying no longer shows a mistaken letter Z at the start.
+- spellcheck: The air to mix on waystation no longer has the I mistakenly capitalized.
+- spellcheck: Removing masks for CPR no longer shows any mistaken "the".
+- spellcheck: Cryo cells now show a proper "s" after the verb float if 1 figure is
+    behind the occupant, while the occupant gets a full stop for their description
+    as it should.
+- spellcheck: The incubator stage focus message is now formatted right.
+- spellcheck: Botany trays being overtaken by weeds now has a "The" at the start as
+    needed.
+- spellcheck: Removing shrapnel from people now has a proper "the" before incision
+    and no plural after the area removed from.
+- spellcheck: Solar panel installation instructions have gotten a passthrough for
+    formatting and grammar, making them more readable.
