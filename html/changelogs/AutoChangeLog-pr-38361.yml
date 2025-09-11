@@ -1,5 +1,0 @@
-author: jwhitak
-delete-after: true
-changes:
-- bugfix: Attempting to overload magazines/other ammo storages will now fumble bullets
-    once the magazine hits max ammo.

@@ -1,5 +1,0 @@
-author: jwhitak
-delete-after: true
-changes:
-- bugfix: Admins with +DEBUG can actually right click inspect UIs again without needing
-    to deadmin then readmin.

@@ -1,4 +1,0 @@
-author: vampirebat74
-delete-after: true
-changes:
-- spellcheck: Changed a hardcoded number into a variable.
