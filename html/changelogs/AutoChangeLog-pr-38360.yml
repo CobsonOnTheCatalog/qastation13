@@ -1,0 +1,6 @@
+author: jwhitak
+delete-after: true
+changes:
+- rscdel: Cargo carts can no longer be put in closets or crates.
+- bugfix: Cargo carts now have considerably less bugs related to being destroyed.
+- bugfix: Cargo carts can no longer open locked crates via a glitch.
