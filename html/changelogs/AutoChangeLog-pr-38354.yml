@@ -1,0 +1,7 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- tweak: The station will no longer consume power if there are no players online,
+    to avoid most scenarios where players would hop on a powerless station.
+- tweak: The SMES units will be fully charged at roundstart if there are less than
+    6 players in the round.
