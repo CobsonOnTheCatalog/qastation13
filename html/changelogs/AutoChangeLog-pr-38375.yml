@@ -1,0 +1,4 @@
+author: jwhitak
+delete-after: true
+changes:
+- bugfix: Mecha Graveyard loot wrecks no longer give double loot.
