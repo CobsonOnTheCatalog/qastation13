@@ -1,0 +1,8 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Table doors can now be made out of wood, metal, plasteel, reinforced glass
+    and reinforced plasma glass. They must be adjacent to a wall or table to be built,
+    and can accept access electronics for permitting people in and out. Deconstruction
+    is done by using a wrench on them, plus a welder first for reinforced types; after
+    removing electronics, if any, with a screwdriver and crowbar.
