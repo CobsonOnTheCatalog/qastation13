@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- spellcheck: Almost every single atom description without proper capitalization or
+    full stops has been fixed.
