@@ -1,0 +1,7 @@
+author: Blonichu
+delete-after: true
+changes:
+- rscadd: Feathers and related feather-recipes. Feathers can be obtained from butchery
+    on chickens, vox, and vox chickens alike. Vox can have their feathers surgically
+    removed and chickens can be plucked by hand with grab intent. Vox can preen themselves
+    with a similar grab intent.
