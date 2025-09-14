@@ -1,0 +1,4 @@
+author: jwhitak
+delete-after: true
+changes:
+- rscadd: You can now mousedrag crates onto crate weighers.
