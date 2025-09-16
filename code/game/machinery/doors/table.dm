@@ -92,7 +92,9 @@
 /obj/machinery/door/table/door_animate(animation) // no spritework for it
 	return
 
-/obj/machinery/door/table/attack_ai(mob/user) //those aren't really machinery, they're just big fucking slabs of a mineral
+/obj/machinery/door/table/attack_ai(mob/user) //those aren't really machinery without electronics in them
+	if(electronics) //likewise, if they exist, treat as normal doors
+		return TryToSwitchState(user)
 	if(isAI(user)) //so the AI can't open it
 		return
 	else if(isrobot(user) && get_dist(user,src) <= 1) //but robots can, not remotely though
@@ -134,6 +136,9 @@
 
 	if(!user.restrained() && (user.size > SIZE_TINY))
 		add_fingerprint(user)
+		if(!emagged && !allowed(user))
+			denied()
+			return
 		SwitchState()
 	return
 
