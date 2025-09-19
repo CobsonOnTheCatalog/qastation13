@@ -1,0 +1,6 @@
+author: jwhitak
+delete-after: true
+changes:
+- bugfix: Borgs can no longer change their internal borg type multiple times by spamming
+    the set module button.
+- bugfix: Borgs and MoMMi can remotely view tgui-based windows again.
