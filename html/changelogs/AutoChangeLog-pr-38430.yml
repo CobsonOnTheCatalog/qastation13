@@ -1,0 +1,5 @@
+author: Blonichu
+delete-after: true
+changes:
+- bugfix: Fixed vox chickens not having feathers to pluck as well as fixing vox turning
+    green after regenerating.
