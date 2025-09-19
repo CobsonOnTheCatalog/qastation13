@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Table doors no longer display above their proper layer when closed.
-- bugfix: Table doors can no longer be spam built on one turf.

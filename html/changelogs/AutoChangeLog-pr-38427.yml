@@ -1,6 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Spessmart MERC bots no longer target the free sample offering bots.
-- bugfix: Spessmart MERC bots can now move if controlled by a player.
-- tweak: Unremovable clothing items can no longer spawn in spessmart.
