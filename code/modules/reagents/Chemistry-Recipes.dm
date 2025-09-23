@@ -171,7 +171,8 @@
 	//100 created volume = 4 heavy range & 7 light range. A few tiles smaller than traitor EMP grandes.
 	//200 created volume = 8 heavy range & 14 light range. 4 tiles larger than traitor EMP grenades.
 	empulse(location, round(created_volume / 24), round(created_volume / 14), 1)
-	holder.clear_reagents()
+	holder.clear_reagents(TRUE)
+	holder.add_reagent(FERROURANIUM,created_volume/10)
 
 /datum/chemical_reaction/silicate
 	name = "Silicate"
@@ -1162,6 +1163,20 @@
 	id = COMNANOBOTS
 	result = COMNANOBOTS
 	required_reagents = list(NANOBOTS = 1, MUTAGEN = 5, SILICATE = 5, IRON = 10)
+	result_amount = 2.5
+
+/datum/chemical_reaction/engnanobots
+	name = "Energetic Nanobots"
+	id = ENGNANOBOTS
+	result = ENGNANOBOTS
+	required_reagents = list(NANOBOTS = 1, FERROURANIUM = 10)
+	result_amount = 2.5
+
+/datum/chemical_reaction/cargonanobots
+	name = "Cargonian Nanobots"
+	id = CARGONANOBOTS
+	result = CARGONANOBOTS
+	required_reagents = list(NANOBOTS = 1, PLASMA = 50)
 	result_amount = 2.5
 
 //Surgery tools from chemicals because why not? Requires a vial to make them and consumes it as a part of making the tool.
