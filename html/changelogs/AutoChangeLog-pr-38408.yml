@@ -1,0 +1,10 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Basketballs can now be bounced in front of players by using them in hand.
+    Disarming other players also lets them take their basketball off them.
+- rscadd: Basketballs hoops now have a scoring system. Normal throws and dunks are
+    worth 2 points, whereas throws from 4 tiles away are worth 3. They can be used
+    to reset the score to 0 again.
+- rscadd: Emagged holodecks now have a special version of the basketball that explodes
+    if not bounced after 4 tile moves.
