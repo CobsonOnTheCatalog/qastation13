@@ -1,4 +1,0 @@
-author: Inorien
-delete-after: true
-changes:
-- bugfix: Batch atmos presets no longer fuck up station air
