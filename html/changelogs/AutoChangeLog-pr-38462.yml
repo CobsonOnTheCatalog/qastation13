@@ -1,0 +1,4 @@
+author: jwhitak
+delete-after: true
+changes:
+- bugfix: Diamond Drills and Advanced Plasma Cutters once again instantly mine.
