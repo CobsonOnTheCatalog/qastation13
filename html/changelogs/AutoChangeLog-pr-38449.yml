@@ -1,0 +1,4 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Asteroids in deep space can now look a little less samey.
