@@ -1,5 +1,0 @@
-author: jwhitak
-delete-after: true
-changes:
-- rscadd: Added many new abandoned crates for miners to salvage.
-- imageadd: Fixed wooden chest sprites to properly line up with other crate sprites.
