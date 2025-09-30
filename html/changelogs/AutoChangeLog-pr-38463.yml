@@ -1,0 +1,4 @@
+author: jwhitak
+delete-after: true
+changes:
+- rscadd: Admins can now spawn xenoarch small finds via the artifacts panel.
