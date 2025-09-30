@@ -1,0 +1,6 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Broken floor tiles now leave scrap metal behind instead of nothing, which
+    can be combined and welded into a sheet of metal if around 8 stacks of them are
+    combined.
