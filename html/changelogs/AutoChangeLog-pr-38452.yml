@@ -1,0 +1,7 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: The admin type selection menus for loading map elements, deleting all atoms,
+    creating mob swarms, setting a steal item objective and setting a z-level base
+    turf now have their type list text filtered down to common type starts for easier
+    reading, and allow typing text to filter types down beforehand.
