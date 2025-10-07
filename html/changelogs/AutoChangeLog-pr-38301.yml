@@ -1,0 +1,5 @@
+author: vampirebat74
+delete-after: true
+changes:
+- rscadd: Added randomly generated "forgotten beasts" and a special "megabeast panel"
+    for their management.
