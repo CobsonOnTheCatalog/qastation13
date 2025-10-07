@@ -1,0 +1,4 @@
+author: Inorien
+delete-after: true
+changes:
+- bugfix: Insectoids can once again change carapace colour in character prefs
