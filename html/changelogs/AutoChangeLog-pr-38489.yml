@@ -1,6 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: While holding a drinking glass and targeting someone else nearby's hand
-    with another in it on help intent, players can offer toasts for them to accept,
-    which clinks glasses together.
