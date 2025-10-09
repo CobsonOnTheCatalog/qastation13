@@ -42,7 +42,7 @@
 	var/last_state = -1
 	var/ticks_this_state=0
 	var/mob_age = 0
-	var/mob_max_age = 300 //10 minutes. above this, the mob will start rolling to die of old age.
+	var/mob_max_age = 450 //15 minutes. above this, the mob will start rolling to die of old age.
 	var/atom/target = null
 	var/turf/territory=null //turf location
 	var/list/family = list() //list of mobs. avoid attacking them and whatnot. also can be used for taming.
@@ -52,11 +52,14 @@
 	var/pacify_aura=FALSE
 	var/kin_check_type_path=null //for mobs with many subtypes. set to the parent mob type. leave null if not needed
 	var/petable=FALSE
-	var/max_local_population=5 //to prevent total overpopulation
+	var/lastmate=0
+	var/matingcooldown=30 //1 minute
+	var/max_local_population=6 //to prevent total overpopulation
 	var/icon_living = ""
 	var/icon_dead = ""
 	var/healthregen=0.01
 	var/lasthealth=0.0
+	var/ticks_dead=0
 	
 	//these are here because we, for some reason that i don't know, call attack_animal. that sounds good, until you realize that attack_animal wants a simple_animal. this causes a lot of runtimes, and i can't find where attack_animal is actually called, or why it's called when we're not even a simple_animal, so instead, we define some of the important variables here so it doesn't totally break. it's still a good practice to revise the code, as was done with most of the common objects that will be broken, like windows and lockers.
 	var/environment_smash_flags = 0xFFFFFF
@@ -81,11 +84,28 @@
 	melee_damage_upper=base_damage+damage_variance
 	melee_damage_lower=base_damage-damage_variance
 
+/mob/living/complex_animal/update_icon()
+	..()
+	icon_state=icon_living
+	if (stat==DEAD)
+		icon_state=icon_dead
+
 /mob/living/complex_animal/Life()
+	update_icon()
 	if(!..())
 		return 0
 	if(stat == DEAD)
+		ticks_dead++
+		if(ticks_dead==15)
+			visible_message("Bugs start flying around <b>\the [src]</b>'s corpse")
+		if(ticks_dead==30)
+			visible_message("<b>\The [src]</b>'s corpse starts to smell...")	
+		if(ticks_dead>30) //1 minute delay
+			if(prob(5))
+				visible_message("<b>\The [src]</b>'s corpse rots away into nothing...")
+				qdel(src)
 		return 0
+	ticks_dead=0
 	
 	if(last_state!=behavior_state)
 		ticks_this_state=0
@@ -95,10 +115,11 @@
 	
 	cache_objects_in_view = view(src,7) //refresh it every life tick.
 	
-	reagents?.metabolize(src)
-		
-	icon_state=icon_living
+	reagents?.metabolize(src)	
+	
 	nutrition-=max_food*food_per_tick
+	
+	lastmate--
 	
 	if(lasthealth<=health && health<maxHealth)
 		health=min(maxHealth,health+maxHealth*healthregen)
@@ -118,6 +139,7 @@
 		//basically, the older you are, the more likley you are to die.
 		//if you are twice as old as the max age, you have a 50% chance to die.
 		//this is ran every tick, by the way, so the probabilities add up.
+		chancetokeelover*=0.25 //ok nevermind reduce the chance a bit it happens a bit too fast.
 		if(rand() < chancetokeelover)
 			emote("deathgasp")
 			health=0
@@ -187,7 +209,7 @@
 	abort_target()
 	
 	//attempt reproduction only while full
-	if(nutrition >= (max_food- get_offspring_cost()*2) && get_offspring_cost() && prob(20))
+	if(nutrition >= (max_food- get_offspring_cost()*2) && get_offspring_cost() && prob(20) && lastmate<=0)
 		behavior_state=ANIMAL_STATE_MATING
 		return FALSE
 	
@@ -319,6 +341,9 @@
 				
 					nutrition-=get_offspring_cost()
 					abort_target()
+					
+					M.lastmate=M.matingcooldown
+					src.lastmate=src.matingcooldown
 					return FALSE
 	return TRUE
 
@@ -624,6 +649,10 @@
 			localcount++
 	if(localcount>max_local_population)
 		return FALSE
+	if(mob_age>mob_max_age || mob_age<mob_max_age*0.1) //too young or too old? no can do.
+		return FALSE
+	if(lastmate>0)
+		return FALSE
 	if((src.gender=="male" && mate.gender=="female") || (mate.gender=="male" && src.gender=="female"))
 		return TRUE
 	return FALSE
@@ -667,7 +696,7 @@
 		emote("deathgasp", message = TRUE)
 	health = 0 
 	stat = DEAD
-	icon_state = icon_dead
+	update_icon()
 	walk(src,0)
 	setDensity(FALSE)
 
