@@ -1,0 +1,4 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- bugfix: Wheelchairs no longer give keyhole or exhaust related suicide messages.
