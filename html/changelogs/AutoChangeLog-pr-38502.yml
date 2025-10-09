@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- bugfix: Welding scrap metal in-hand no longer makes it vanish into... somewhere.
+- bugfix: Trash persistent metal scraps now load their materials right.
