@@ -1,0 +1,5 @@
+author: DeityLink
+delete-after: true
+changes:
+- rscadd: Purple Sunglasses that you can acquire from the Old Vendotron or the Cheap
+    Glasses supply crate now actually give a purple tint to the world around you.
