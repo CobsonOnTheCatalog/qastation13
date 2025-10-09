@@ -1,0 +1,8 @@
+author: CrazyAmphibian
+delete-after: true
+changes:
+- bugfix: 'Jungle: Fixed some lighting issues'
+- bugfix: 'Jungle: Added a missing kitchen vendor'
+- bugfix: 'Jungle: the wildlife has been educated on the importance of abstinence'
+- bugfix: 'Jungle: animals now decompose when dead. butcher while the meat is fresh!'
+- bugfix: 'Jungle: animals no longer appear as alive when they are dead.'
