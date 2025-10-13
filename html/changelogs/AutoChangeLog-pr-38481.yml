@@ -1,0 +1,8 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Sand can now be poured into a beaker to make the reagent silica, composed
+    of 1 part silicon and 2 parts oxygen when electrolyzed. Pocket sanding, fire extinguishing
+    and turf sanding can be done with the contents of this beaker too. Pouring the
+    contents of a silica beaker back onto the ground makes it back into sand stacks
+    again.
