@@ -1,5 +1,0 @@
-author: CrazyAmphibian
-delete-after: true
-changes:
-- tweak: SMES no longer disable output when they run out of charge
-- spellcheck: improved SMES charge mode descriptors
