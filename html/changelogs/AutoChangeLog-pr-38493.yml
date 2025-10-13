@@ -1,5 +1,0 @@
-author: jwhitak
-delete-after: true
-changes:
-- rscadd: Adds the Minifridge, a smaller SmartFridge that can hold a limited amount
-    of items. Obtainable via Science or soldering a small circuitboard.
