@@ -1,0 +1,6 @@
+author: DeityLink
+delete-after: true
+changes:
+- rscadd: Humans with the shadow mutation (currently obtainable from the Dark Revive
+    Xenaorch artifact) now emit some visible black smoke when they take damage from
+    stepping into the light.
