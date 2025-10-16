@@ -1,6 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Binary or trinary atmospheric devices connected to pipes will now show said
-    pipes transparent and gas filled if their connected pipes are as such.
-- tweak: Binary atmospheric devices can no longer be painted transparent themselves.
