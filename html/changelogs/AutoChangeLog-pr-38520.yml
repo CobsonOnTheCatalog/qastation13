@@ -1,9 +1,0 @@
-author: DeityLink
-delete-after: true
-changes:
-- imageadd: Campfires and Stoves now have moody lights and particles, and have their
-    last embers slowly fade out when their fire runs out.
-- imageadd: Also added moody lights to canisters, heaters and freezers, the disease
-    analyzer, microwaves, SMES, and the nuke. Some of which were contributed by SECBATON-GRIFFON.
-- imageadd: The Microwave's unused open sprite is now briefly used when it opens after
-    cooking something.
