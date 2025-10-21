@@ -1,5 +1,0 @@
-author: nervere
-delete-after: true
-changes:
-- bugfix: Deleted that redundant debug verb that shows disconnected pipes that everyone
-    has had access to for some reason.
