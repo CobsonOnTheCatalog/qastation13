@@ -1,0 +1,5 @@
+author: DeityLink
+delete-after: true
+changes:
+- rscadd: Boxstation's Telecommunications Server Room now has a light switch in its
+    entrance airlock that's off by default.
