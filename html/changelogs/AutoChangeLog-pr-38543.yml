@@ -1,0 +1,4 @@
+author: DeityLink
+delete-after: true
+changes:
+- bugfix: Fixed Snails and Frog infestations never firing at all for this entire time.
