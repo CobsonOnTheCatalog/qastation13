@@ -1,0 +1,6 @@
+author: DeityLink
+delete-after: true
+changes:
+- rscadd: Eye Surgery now cures players of eye-related temporary status effects that
+    could sometimes go on for way too long. So now you should always have your vision
+    fully restored after undergoing it.
