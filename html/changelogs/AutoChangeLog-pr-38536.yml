@@ -1,6 +1,0 @@
-author: nervere
-delete-after: true
-changes:
-- tweak: RoidStation's AI and telecomms rooms have been returned to their original
-    positions (circa late 2022). Auxiliary tool storage is also no longer weirdly
-    shoved into maintenance.
