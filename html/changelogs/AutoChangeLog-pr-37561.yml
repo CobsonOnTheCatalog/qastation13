@@ -1,5 +1,0 @@
-author: west3436
-delete-after: true
-changes:
-- rscadd: Added Planet Scanners to each map's bridge used to print destination disks
-    to new planets in exchange for heavy power consumption.
