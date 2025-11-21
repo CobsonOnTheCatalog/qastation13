@@ -1,0 +1,8 @@
+author: west3436
+delete-after: true
+changes:
+- bugfix: Fixed ERROR icon state showing up on some tree types.
+- bugfix: Fixed the sunrise/sunset sounds playing globally.
+- bugfix: Fixed shuttles leaving non-shuttle turfs behind.
+- bugfix: Fixed shuttles taking turf edge overlays along for the ride.
+- bugfix: Fixed players continuing to hear weather sounds after dying on a planet.
