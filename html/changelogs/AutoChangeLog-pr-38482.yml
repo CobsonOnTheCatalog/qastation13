@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Punctualite now properly explodes on the hour.
-- rscadd: Admins can now set a manual round time offset in the secrets panel.
