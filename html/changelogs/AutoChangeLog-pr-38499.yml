@@ -1,0 +1,14 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: Sinks, toilets and showers can now have their reagent reservoirs removed
+    and replaced while unwrenched and with an empty hand. Give people their honk serum
+    showers that they deserve today!
+- tweak: Sink, toilet and shower reagent reservoirs now transfer their reagents when
+    filling other containers instead of cloning them.
+- rscadd: To balance sink, toilet and shower reagent reservoirs no longer infinitely
+    refilling, they now default to being a new item known as a "reagent core" that
+    can refill infinitely and only have their reagents transferred out at these relevant
+    objects, defaulting to a water core on station ones and acid core on motherships.
+    These are mechanic scannable for easy replacement, and have an admin subtype that
+    can select its reagent to fill on use in hand by an admin.
