@@ -1,0 +1,23 @@
+author: CrazyAmphibian
+delete-after: true
+changes:
+- rscadd: 'Jungle: Randomized vaults exclusive to jungle now spawn across the surface,
+    away from the station.'
+- rscadd: 'Jungle: Improved the tunnels'
+- rscadd: 'Jungle: improved station decoration (thank you 13monkeys)'
+- bugfix: 'Jungle: fixed many mapping oversights'
+- bugfix: 'Jungle: fixed issues with certain events'
+- bugfix: 'Jungle: fixed mobs spamming deadchat and the logs'
+- tweak: 'Jungle: overhauled cargo, made bridge and research better and more unique
+    (thank you 13monkeys)'
+- tweak: 'Jungle: Dinosaurs and panthers are smarter, and should avoid going extinct'
+- tweak: 'Jungle: The underground area now has a telecommunications relay'
+- tweak: 'Jungle: Bar is now seperate from kitchen'
+- imageadd: 'Jungle: updated sprites for the underground tiles'
+- experiment: 'Jungle: the vox outpost has been relocated to the same area as the
+    station, after a lengthy trade agreement between the Shoal and NanoTrasen'
+- experiment: 'Jungle: NanoTrasen has discovered the location of a large fallen meteorite
+    on the planet, and have moved mining efforts to the surface (the roid is now planetside.
+    you can either take the shuttle as usual, or walk to the roid z-level if you can
+    brave the fauna).'
+- spellcheck: 'Jungle: fixed some grammar issues mainly with mobs'
