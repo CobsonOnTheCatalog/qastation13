@@ -2532,6 +2532,7 @@
 #include "code\modules\randomMaps\special.dm"
 #include "code\modules\randomMaps\transit.dm"
 #include "code\modules\randomMaps\vault_definitions.dm"
+#include "code\modules\randomMaps\vault_defs_jungle.dm"
 #include "code\modules\randomMaps\vaults.dm"
 #include "code\modules\RCD\engie.dm"
 #include "code\modules\RCD\RCD.dm"
