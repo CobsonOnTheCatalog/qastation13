@@ -624,6 +624,7 @@ var/list/global_mutations = list() // list of hidden mutation things
 #define CANPARALYSE		(1<<2)
 #define CANPUSH			(1<<3)
 #define UNPACIFIABLE 	(1<<4)		//Immune to pacify effects.
+#define PACIFIED	 	(1<<5)
 
 #define GODMODE			(1<<12)
 #define FAKEDEATH		(1<<13)	//Replaces stuff like changeling.changeling_fakedeath
