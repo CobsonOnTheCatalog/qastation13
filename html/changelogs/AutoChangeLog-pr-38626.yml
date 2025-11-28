@@ -1,0 +1,13 @@
+author: west3436
+delete-after: true
+changes:
+- bugfix: 'Removed bunnies from the procgen spawn list to prevent bunnapocalypse (closes
+    #38623).'
+- bugfix: Fixed Phazon mechs being able to defy physics and phase across planetary
+    boundaries.
+- bugfix: 'Removed an erroneous 0 from the Planet Scanner UI (closes #38617).'
+- bugfix: Fixed turfs previously occupied by shuttles not updating their day/night
+    lighting and weather effects when the shuttle departs.
+- bugfix: Fixed certain shuttles losing their floors when visiting or leaving planetary
+    surfaces (for real this time).
+- bugfix: Players will now have all weather sounds cleared when they become a ghost.
