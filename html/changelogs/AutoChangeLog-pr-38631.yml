@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: The "rotate chair" verb now works again, but is hidden from the regular verb
+    list, while still being able to be typed and called in macros.
