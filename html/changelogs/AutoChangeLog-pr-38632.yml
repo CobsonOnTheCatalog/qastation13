@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- tweak: The "Check wire connections" verb now shows what direction a power cable
-    is missing a connection on, and on only one line per cable instead of per direction.
