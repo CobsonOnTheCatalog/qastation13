@@ -1,0 +1,4 @@
+author: west3436
+delete-after: true
+changes:
+- rscdel: Removed pipe transparency due to performance issues.
