@@ -1,0 +1,10 @@
+author: west3436
+delete-after: true
+changes:
+- bugfix: Fixed interior shuttle corners losing their turfs when traveling through
+    space.
+- bugfix: Fixed the blizzard events on Snaxi bricking the weather controller entirely.
+- rscadd: Added a "restart climate" button to the admin Climate Panel in case the
+    subsystem locks up.
+- bugfix: Turfs left behind when a shuttle leaves will now properly show weather and
+    day/night effects on Snaxi and Jungle.
