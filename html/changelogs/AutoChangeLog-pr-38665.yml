@@ -1,0 +1,4 @@
+author: Eneocho
+delete-after: true
+changes:
+- bugfix: bundle emags shouldn't be the shitty bugged ones no more
