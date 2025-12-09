@@ -1,0 +1,6 @@
+author: CrazyAmphibian
+delete-after: true
+changes:
+- rscadd: fission reactor controllers now display their heat output in watts.
+- bugfix: Fixed some bugs with fission reactor, including broken icons, improper fuel
+    life calculations, and being able to extract reagents from food
