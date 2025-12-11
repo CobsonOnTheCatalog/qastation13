@@ -1,0 +1,7 @@
+author: west3436
+delete-after: true
+changes:
+- rscadd: You can now build on planet surfaces.
+- bugfix: Fixed weather and daylight affecting indoor ruin areas.
+- bugfix: Fixed explosions in ruins exposing space turfs.
+- bugfix: Fixed ruins spawning over wall turfs.
