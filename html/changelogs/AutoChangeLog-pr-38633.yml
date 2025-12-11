@@ -1,6 +1,0 @@
-author: strawberrytan
-delete-after: true
-changes:
-- bugfix: Updated Buttonpusher.dmm buttons to not have access requirements.
-- tweak: Updated all log papers
-- tweak: Updated SMES settings
