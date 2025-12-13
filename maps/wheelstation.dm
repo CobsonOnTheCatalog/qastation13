@@ -47,8 +47,8 @@
 		DISP_JANITOR_CLOSET,
 		DISP_GENETICS,
 		DISP_TELECOMMS,
-		DISP_MECHANICS,
-		null // DISP_TELESCIENCE
+		DISP_MECHANICS
+		// DISP_TELESCIENCE
 	)
 
 	enabled_jobs = list(/datum/job/trader)

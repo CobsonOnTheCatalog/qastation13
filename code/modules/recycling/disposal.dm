@@ -1133,7 +1133,6 @@
 //a three-way junction that sorts objects
 /obj/structure/disposalpipe/sortjunction
 	icon_state = "pipe-j1s"
-	var/sortType = 0 //Deprecated, here for legacy support.
 	var/sort_tag //Replacement of the above, more construction friendly.
 
 	var/posdir = 0
@@ -1162,10 +1161,7 @@
 
 /obj/structure/disposalpipe/sortjunction/New()
 	. = ..()
-	if(sortType && !sort_tag)
-		sort_tag = uppertext(map.default_tagger_locations[sortType])
-
-	else if(sort_tag)
+	if(sort_tag)
 		sort_tag = uppertext(sort_tag)
 
 	update_dir()

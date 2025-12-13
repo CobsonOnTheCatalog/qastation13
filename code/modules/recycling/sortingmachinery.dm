@@ -29,10 +29,7 @@
 /obj/item/device/destTagger/New()
 	. = ..()
 
-	// Make sure to not copy any null ones, null is for map overrides to remove.
-	for(var/dest in map.default_tagger_locations)
-		if(dest)
-			destinations += dest
+	destinations = map.default_tagger_locations.Copy() //Here because BYOND.
 
 /obj/item/device/destTagger/interact(mob/user as mob)
 
@@ -899,9 +896,7 @@
 /obj/machinery/autoprocessor/wrapping/New()
 	. = ..()
 
-	for(var/dest in map.default_tagger_locations)
-		if(dest)
-			destinations += dest
+	destinations = map.default_tagger_locations.Copy() //Here because BYOND.
 
 /obj/machinery/autoprocessor/wrapping/process_affecting(var/atom/movable/target)
 	if(is_type_in_list(target, cannot_wrap))
