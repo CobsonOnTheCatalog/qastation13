@@ -1266,6 +1266,12 @@
 /obj/structure/disposalpipe/sortjunction/HoS/mirrored
 	icon_state = "pipe-j2s"
 
+/obj/structure/disposalpipe/sortjunction/Warden
+	sort_tag = DISP_WARDEN
+
+/obj/structure/disposalpipe/sortjunction/Warden/mirrored
+	icon_state = "pipe-j2s"
+
 /obj/structure/disposalpipe/sortjunction/Medbay
 	sort_tag = DISP_MEDBAY
 

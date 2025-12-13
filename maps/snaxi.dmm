@@ -4435,10 +4435,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/structure/disposalpipe/sortjunction{
-	dir = 4;
-	icon_state = "pipe-j2s";
-	sort_tag = "Disposals"
+/obj/structure/disposalpipe/sortjunction/Disposals/mirrored{
+	dir = 4
 	},
 /turf/simulated/floor,
 /area/hallway/primary/aft{
@@ -10557,9 +10555,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/structure/disposalpipe/sortjunction{
-	sort_tag = "Disposals"
-	},
+/obj/structure/disposalpipe/sortjunction/Disposals,
 /turf/simulated/floor,
 /area/hallway/primary/fore{
 	name = "\improper Taxi Civilian Dock"
@@ -14430,9 +14426,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/structure/disposalpipe/sortjunction/Engineering/mirrored{
-	sort_tag = "Mechanics"
-	},
+/obj/structure/disposalpipe/sortjunction/Mechanics/mirrored,
 /turf/simulated/floor,
 /area/hallway/primary/fore{
 	name = "\improper Taxi Civilian Dock"
