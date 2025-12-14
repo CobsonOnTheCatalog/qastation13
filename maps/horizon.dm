@@ -38,19 +38,6 @@
 	center_x = 253
 	center_y = 142
 
-	default_tagger_locations = list(
-		DISP_ENGINEERING,
-		DISP_ATMOSPHERICS,
-		DISP_SECURITY,
-		DISP_MEDBAY,
-		DISP_RESEARCH,
-		DISP_ROBOTICS,
-		DISP_BAR,
-		DISP_KITCHEN,
-		DISP_HYDROPONICS,
-		DISP_GENETICS
-	)
-
 /datum/map/active/New()
 	.=..()
 

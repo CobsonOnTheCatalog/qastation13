@@ -1130,6 +1130,8 @@
 		else
 			return mask & (~setbit)
 
+var/list/obj/structure/disposalpipe/sortjunction/sort_junctions = list()
+
 //a three-way junction that sorts objects
 /obj/structure/disposalpipe/sortjunction
 	icon_state = "pipe-j1s"
@@ -1161,12 +1163,17 @@
 
 /obj/structure/disposalpipe/sortjunction/New()
 	. = ..()
+	sort_junctions += src
 	if(sort_tag)
 		sort_tag = uppertext(sort_tag)
 
 	update_dir()
 	updatedesc()
 	update()
+
+/obj/structure/disposalpipe/sortjunction/Destroy()
+	sort_junctions -= src
+	. = ..()
 
 /obj/structure/disposalpipe/sortjunction/attackby(var/obj/item/I, var/mob/user)
 	if(istype(I, /obj/item/device/destTagger))

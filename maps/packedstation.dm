@@ -22,28 +22,6 @@
 			},
 		)
 
-	default_tagger_locations = list(
-		DISP_DISPOSALS,
-		DISP_CARGO_BAY,
-		DISP_ENGINEERING,
-		DISP_ATMOSPHERICS,
-		DISP_SECURITY,
-		DISP_MEDBAY,
-		DISP_CMO_OFFICE,
-		DISP_CHEMISTRY,
-		DISP_RESEARCH,
-		DISP_ROBOTICS,
-		DISP_HOP_OFFICE,
-		DISP_LIBRARY,
-		DISP_THEATRE,
-		DISP_BAR,
-		DISP_KITCHEN,
-		DISP_HYDROPONICS,
-		DISP_JANITOR_CLOSET,
-		DISP_GENETICS,
-		DISP_MECHANICS
-	)
-
 	enabled_jobs = list(/datum/job/trader)
 
 	load_map_elements = list(

@@ -1,4 +1,5 @@
 //Default list destination taggers and such can use.
+var/list/tagger_locations = list()
 
 /obj/item/device/destTagger
 	name = "destination tagger"
@@ -28,8 +29,13 @@
 
 /obj/item/device/destTagger/New()
 	. = ..()
+	if(!tagger_locations.len)
+		setup_tagger_locations()
+	destinations = tagger_locations.Copy()
 
-	destinations = map.default_tagger_locations.Copy() //Here because BYOND.
+/proc/setup_tagger_locations()
+	for(var/obj/structure/disposalpipe/sortjunction/SJ in sort_junctions)
+		tagger_locations |= list(SJ.sort_tag)
 
 /obj/item/device/destTagger/interact(mob/user as mob)
 
@@ -506,7 +512,9 @@
 /obj/machinery/sorting_machine/destination/New()
 	. = ..()
 
-	destinations = map.default_tagger_locations.Copy() //Here because BYOND.
+	if(!tagger_locations.len)
+		setup_tagger_locations()
+	destinations = tagger_locations.Copy()
 
 	for(var/i = 1, i <= destinations.len, i++)
 		destinations[i] = uppertext(destinations[i])
@@ -896,7 +904,9 @@
 /obj/machinery/autoprocessor/wrapping/New()
 	. = ..()
 
-	destinations = map.default_tagger_locations.Copy() //Here because BYOND.
+	if(!tagger_locations.len)
+		setup_tagger_locations()
+	destinations = tagger_locations.Copy()
 
 /obj/machinery/autoprocessor/wrapping/process_affecting(var/atom/movable/target)
 	if(is_type_in_list(target, cannot_wrap))
