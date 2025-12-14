@@ -1181,7 +1181,12 @@ var/list/obj/structure/disposalpipe/sortjunction/sort_junctions = list()
 		var/obj/item/device/destTagger/O = I
 
 		if(O.currTag)// Tag set
-			sort_tags = list(uppertext(O.destinations[O.currTag]))
+			if(alert(user,"Replace or add to tags?","Tag settings","Replace","Add") == "Replace")
+				if(user.Adjacent(src))
+					sort_tags = list(uppertext(O.destinations[O.currTag]))
+			else
+				if(user.Adjacent(src))
+					sort_tags += list(uppertext(O.destinations[O.currTag]))
 			playsound(src, 'sound/machines/twobeep.ogg', 100, 1)
 			to_chat(user, "<span class='notice'>Changed filter to [english_list(sort_tags)]</span>")
 			updatedesc()
@@ -1260,6 +1265,12 @@ var/list/obj/structure/disposalpipe/sortjunction/sort_junctions = list()
 	sort_tags = list(DISP_ATMOSPHERICS)
 
 /obj/structure/disposalpipe/sortjunction/Atmos/mirrored
+	icon_state = "pipe-j2s"
+
+/obj/structure/disposalpipe/sortjunction/GenSecurity
+	sort_tags = list(DISP_SECURITY,DISP_HOS_OFFICE,DISP_DETECTIVE,DISP_WARDEN,DISP_IAA)
+
+/obj/structure/disposalpipe/sortjunction/GenSecurity/mirrored
 	icon_state = "pipe-j2s"
 
 /obj/structure/disposalpipe/sortjunction/Security
