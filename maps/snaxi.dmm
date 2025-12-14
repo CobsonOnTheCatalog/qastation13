@@ -34497,7 +34497,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/sortjunction/IAA/mirrored,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "neutralcorner"
@@ -34527,6 +34527,10 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor{
 	icon_state = "cult"
 	},
@@ -34548,6 +34552,9 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8;
 	name = "Firelock West"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/lawoffice)
@@ -35004,6 +35011,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "cult"
 	},
@@ -35379,6 +35387,10 @@
 	name = "\improper Central Security Hallway"
 	})
 "bCH" = (
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "cult"
 	},
@@ -37872,13 +37884,13 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/sortjunction/Warden/mirrored{
+	dir = 8
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -38628,6 +38640,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "darkred";
@@ -39097,12 +39110,18 @@
 	dir = 4;
 	on = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
 /area/security/interrogation)
 "bIq" = (
 /obj/structure/bed/chair,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -39123,6 +39142,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -39130,6 +39152,9 @@
 "bIs" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -39385,6 +39410,9 @@
 /obj/effect/landmark/start{
 	name = "Warden"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -39413,6 +39441,9 @@
 /obj/item/weapon/paper_bin/red{
 	pixel_x = -3;
 	pixel_y = 7
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -39931,6 +39962,7 @@
 	dir = 8;
 	on = 1
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -42364,12 +42396,18 @@
 	name = "Security Blast Door";
 	opacity = 0
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "grimy"
 	},
 /area/security/detectives_office)
 "bOv" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor{
@@ -42822,6 +42860,10 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/carpet,
 /area/security/detectives_office)
 "bPl" = (
@@ -42877,6 +42919,10 @@
 	icon_state = "1-8";
 	tag = ""
 	},
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/machinery/disposal,
 /turf/simulated/floor/carpet,
 /area/security/detectives_office)
 "bPp" = (
@@ -62257,6 +62303,15 @@
 /turf/space,
 /turf/unsimulated/wall,
 /area/centcom)
+"cGc" = (
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/security/interrogation)
 "cGd" = (
 /obj/structure/shuttle/diag_wall/black{
 	dir = 8
@@ -76664,6 +76719,20 @@
 /area/hallway/primary/starboard{
 	name = "\improper Central Medical Hallway"
 	})
+"fbH" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "neutralcorner"
+	},
+/area/hallway/primary/central{
+	name = "\improper Central Security Hallway"
+	})
 "fcn" = (
 /obj/structure/table,
 /obj/machinery/recharger{
@@ -80374,6 +80443,15 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/simulated/floor,
 /area/science/storage)
+"kgs" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/security/warden)
 "kgu" = (
 /obj/structure/window/reinforced{
 	icon = 'icons/obj/objects.dmi';
@@ -83503,6 +83581,10 @@
 	dir = 1;
 	pixel_y = -32
 	},
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -84118,6 +84200,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/mining/station)
+"pkS" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/security/interrogation)
 "pnd" = (
 /obj/structure/fence/corner,
 /turf/unsimulated/floor/snow,
@@ -85885,6 +85976,22 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/auxillary)
+"rNV" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/disposalpipe/sortjunction/Detective/mirrored{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/hallway/primary/central{
+	name = "\improper Central Security Hallway"
+	})
 "rOm" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -87584,6 +87691,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -132456,7 +132567,7 @@ bEZ
 bGj
 bHs
 bIn
-bIW
+kgs
 bJT
 olf
 bLK
@@ -133361,8 +133472,8 @@ bEb
 bFa
 bLJ
 pqL
-bKR
-bKR
+pkS
+cGc
 bKR
 bKR
 bLJ
@@ -138502,7 +138613,7 @@ bBX
 bAr
 bAr
 bAr
-bOx
+fbH
 bAr
 bPL
 bQx
@@ -138804,7 +138915,7 @@ bza
 bza
 bza
 bza
-bOw
+rNV
 bza
 bPK
 bQw
