@@ -1182,7 +1182,7 @@ var/list/obj/structure/disposalpipe/sortjunction/sort_junctions = list()
 
 		if(O.currTag)// Tag set
 			if(O.add_tag)
-				sort_tags += list(uppertext(O.destinations[O.currTag]))
+				sort_tags |= list(uppertext(O.destinations[O.currTag]))
 			else
 				sort_tags = list(uppertext(O.destinations[O.currTag]))
 			playsound(src, 'sound/machines/twobeep.ogg', 100, 1)
