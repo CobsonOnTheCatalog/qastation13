@@ -12,6 +12,7 @@ var/list/tagger_locations = list()
 	var/mode  = 0 //If the tagger is "hacked" so you can add extra tags.
 
 	var/currTag = 0
+	var/add_tag = FALSE
 	var/list/destinations  = list()
 
 	w_class = W_CLASS_TINY
@@ -53,6 +54,7 @@ var/list/tagger_locations = list()
 
 	dat += "</tr></table><br>Current Selection: [currTag ? destinations[currTag] : "None"].<hr><br>"
 
+	dat += "<a href='?src=\ref[src];toggleAdd=1'>[add_tag ? "Add" : "Replace"] tag on sorting junctions</a>"
 	if(mode)
 		dat += "<a href='?src=\ref[src];new_dest=1'>Add destination</a>"
 
@@ -96,6 +98,11 @@ var/list/tagger_locations = list()
 
 	if(href_list["nextTag"])
 		currTag = clamp(text2num(href_list["nextTag"]), 0, destinations.len)
+		interact(usr)
+		return 1
+
+	if(href_list["toggleAdd"])
+		add_tag = !add_tag
 		interact(usr)
 		return 1
 
