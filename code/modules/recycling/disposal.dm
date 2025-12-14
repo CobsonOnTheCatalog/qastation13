@@ -1285,6 +1285,12 @@ var/list/obj/structure/disposalpipe/sortjunction/sort_junctions = list()
 /obj/structure/disposalpipe/sortjunction/Detective/mirrored
 	icon_state = "pipe-j2s"
 
+/obj/structure/disposalpipe/sortjunction/IAA
+	sort_tag = DISP_IAA
+
+/obj/structure/disposalpipe/sortjunction/IAA/mirrored
+	icon_state = "pipe-j2s"
+
 /obj/structure/disposalpipe/sortjunction/Medbay
 	sort_tag = DISP_MEDBAY
 

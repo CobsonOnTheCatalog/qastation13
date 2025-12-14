@@ -1589,6 +1589,7 @@ var/proccalls = 1
 #define DISP_HOS_OFFICE     "HoS Office"
 #define DISP_WARDEN         "Warden"
 #define DISP_DETECTIVE      "Detective"
+#define DISP_IAA            "Internal Affairs"
 #define DISP_MEDBAY         "Medbay"
 #define DISP_CMO_OFFICE     "CMO Office"
 #define DISP_CHEMISTRY      "Chemistry"
