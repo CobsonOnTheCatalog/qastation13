@@ -1247,6 +1247,12 @@ var/list/obj/structure/disposalpipe/sortjunction/sort_junctions = list()
 /obj/structure/disposalpipe/sortjunction/QM/mirrored
 	icon_state = "pipe-j2s"
 
+/obj/structure/disposalpipe/sortjunction/GenEngineering
+	sort_tags = list(DISP_ENGINEERING,DISP_CE_OFFICE,DISP_ATMOSPHERICS)
+
+/obj/structure/disposalpipe/sortjunction/GenEngineering/mirrored
+	icon_state = "pipe-j2s"
+
 /obj/structure/disposalpipe/sortjunction/Engineering
 	sort_tags = list(DISP_ENGINEERING)
 
@@ -1301,6 +1307,12 @@ var/list/obj/structure/disposalpipe/sortjunction/sort_junctions = list()
 /obj/structure/disposalpipe/sortjunction/IAA/mirrored
 	icon_state = "pipe-j2s"
 
+/obj/structure/disposalpipe/sortjunction/GenMedbay
+	sort_tags = list(DISP_MEDBAY,DISP_CMO_OFFICE,DISP_CHEMISTRY)
+
+/obj/structure/disposalpipe/sortjunction/GenMedbay/mirrored
+	icon_state = "pipe-j2s"
+
 /obj/structure/disposalpipe/sortjunction/Medbay
 	sort_tags = list(DISP_MEDBAY)
 
@@ -1317,6 +1329,12 @@ var/list/obj/structure/disposalpipe/sortjunction/sort_junctions = list()
 	sort_tags = list(DISP_CHEMISTRY)
 
 /obj/structure/disposalpipe/sortjunction/Chemistry/mirrored
+	icon_state = "pipe-j2s"
+
+/obj/structure/disposalpipe/sortjunction/GenResearch
+	sort_tags = list(DISP_RESEARCH,DISP_RD_OFFICE,DISP_ROBOTICS)
+
+/obj/structure/disposalpipe/sortjunction/GenResearch/mirrored
 	icon_state = "pipe-j2s"
 
 /obj/structure/disposalpipe/sortjunction/Research
