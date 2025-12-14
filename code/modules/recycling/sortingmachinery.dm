@@ -39,7 +39,7 @@ var/list/tagger_locations = list()
 
 /proc/setup_tagger_locations()
 	for(var/obj/structure/disposalpipe/sortjunction/SJ in sort_junctions)
-		tagger_locations |= list(SJ.sort_tag)
+		tagger_locations |= SJ.sort_tags
 
 /obj/item/device/destTagger/interact(mob/user as mob)
 
