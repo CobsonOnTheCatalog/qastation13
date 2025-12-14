@@ -1,7 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- tweak: Dizziness from sources such as alcohol consumption now moves around smoother
-    and takes up the entire life tick, maintaining the same intensity as before.
-- tweak: Xenomorphs, monkeys and brains can how have dizzy visuals, and visually jitter
-    if need be.
