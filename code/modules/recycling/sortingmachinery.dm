@@ -29,6 +29,10 @@ var/list/tagger_locations = list()
 
 /obj/item/device/destTagger/New()
 	. = ..()
+	if(ticker && ticker.current_state == GAME_STATE_PLAYING)
+		initialize()
+
+/obj/item/device/destTagger/initialize()
 	if(!tagger_locations.len)
 		setup_tagger_locations()
 	destinations = tagger_locations.Copy()
@@ -512,13 +516,6 @@ var/list/tagger_locations = list()
 /obj/machinery/sorting_machine/destination/New()
 	. = ..()
 
-	if(!tagger_locations.len)
-		setup_tagger_locations()
-	destinations = tagger_locations.Copy()
-
-	for(var/i = 1, i <= destinations.len, i++)
-		destinations[i] = uppertext(destinations[i])
-
 	component_parts = newlist(
 		/obj/item/weapon/circuitboard/sorting_machine/destination,
 		/obj/item/weapon/stock_parts/matter_bin,
@@ -527,6 +524,17 @@ var/list/tagger_locations = list()
 		/obj/item/weapon/stock_parts/capacitor
 	)
 	RefreshParts()
+
+	if(ticker && ticker.current_state == GAME_STATE_PLAYING)
+		initialize()
+
+/obj/machinery/sorting_machine/destination/initialize()
+	if(!tagger_locations.len)
+		setup_tagger_locations()
+	destinations = tagger_locations.Copy()
+
+	for(var/dest in destinations)
+		dest = uppertext(dest)
 
 /obj/machinery/sorting_machine/destination/interact(mob/user)
 	if(stat & (BROKEN | NOPOWER | FORCEDISABLE))
@@ -903,7 +911,10 @@ var/list/tagger_locations = list()
 
 /obj/machinery/autoprocessor/wrapping/New()
 	. = ..()
+	if(ticker && ticker.current_state == GAME_STATE_PLAYING)
+		initialize()
 
+/obj/machinery/autoprocessor/wrapping/initialize()
 	if(!tagger_locations.len)
 		setup_tagger_locations()
 	destinations = tagger_locations.Copy()
