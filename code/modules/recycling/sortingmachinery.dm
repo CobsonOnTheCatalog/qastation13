@@ -540,8 +540,8 @@ var/list/tagger_locations = list()
 		setup_tagger_locations()
 	destinations = tagger_locations.Copy()
 
-	for(var/dest in destinations)
-		dest = uppertext(dest)
+	for(var/idx in 1 to destinations.len) //has to be like this or it won't modify
+		destinations[idx] = uppertext(destinations[idx])
 
 /obj/machinery/sorting_machine/destination/interact(mob/user)
 	if(stat & (BROKEN | NOPOWER | FORCEDISABLE))
