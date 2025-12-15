@@ -1165,9 +1165,8 @@ var/list/obj/structure/disposalpipe/sortjunction/sort_junctions = list()
 	. = ..()
 	sort_junctions += src
 	if(sort_tags.len)
-		for(var/tag in sort_tags)
-			tag = uppertext(tag)
-
+		for(var/idx in 1 to sort_tags.len) //has to be like this or it won't modify
+			sort_tags[idx] = uppertext(sort_tags[idx])
 	update_dir()
 	updatedesc()
 	update()
