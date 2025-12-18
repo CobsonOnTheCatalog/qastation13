@@ -1,4 +1,0 @@
-author: west3436
-delete-after: true
-changes:
-- bugfix: Ghosts can no longer activate the Old Database.

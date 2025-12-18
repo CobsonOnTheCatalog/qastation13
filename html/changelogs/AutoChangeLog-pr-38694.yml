@@ -1,4 +1,0 @@
-author: hacker-on-steroids
-delete-after: true
-changes:
-- bugfix: radiation collectors now report proper power output when multitooled

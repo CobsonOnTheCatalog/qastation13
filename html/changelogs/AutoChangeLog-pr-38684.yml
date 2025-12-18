@@ -1,6 +1,0 @@
-author: Eneocho
-delete-after: true
-changes:
-- rscadd: The material a hammer is made of will now affect its smithing performance,
-    with tougher materials (like uranium or plasma) performing better than their counterparts
-    (like gold or silver). Does not affect its performance as a weapon.
