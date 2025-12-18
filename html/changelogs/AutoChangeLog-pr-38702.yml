@@ -1,0 +1,4 @@
+author: hacker-on-steroids
+delete-after: true
+changes:
+- tweak: nuclear pinpointers retain direction when pulled
