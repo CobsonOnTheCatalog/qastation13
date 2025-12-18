@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: DIY shuttle engine pre-igniters can now be rotated with alt click and their
+    verbs, just like the propulsion system.
