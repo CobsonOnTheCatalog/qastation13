@@ -1,0 +1,16 @@
+author: west3436
+delete-after: true
+changes:
+- bugfix: Fixed blizzards on any planet causing all shuttles to go into lockdown.
+- bugfix: Fixed edge overlays tagging along on shuttle rides via corner turfs.
+- bugfix: Fixed shuttles generating a new transit area every time one is used instead
+    of just reusing one.
+- bugfix: Fixed shuttles being able to fly from their current planet to their current
+    planet.
+- bugfix: Fixed gibtonite creating asteroid turfs when detonated on planet surfaces.
+- bugfix: Fixed transit area generation lagging the entire server due to a sleep().
+- bugfix: Fixed a 10yr old bug which resulted in transit areas generating incorrectly
+    if the shuttle faces west.
+- bugfix: Fixed Exploration Shuttle Suit Storage Units being empty.
+- bugfix: Fixed Station <-> Mining Roid shuttles always using transit levels after
+    visiting a planet once.
