@@ -1,0 +1,4 @@
+author: hacker-on-steroids
+delete-after: true
+changes:
+- rscadd: supermatter shard monitors now report the shard's approximate heating power
