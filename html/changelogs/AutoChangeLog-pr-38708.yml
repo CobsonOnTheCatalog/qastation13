@@ -1,0 +1,4 @@
+author: Inorien
+delete-after: true
+changes:
+- bugfix: Fixed some grenade runtimes
