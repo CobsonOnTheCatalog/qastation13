@@ -1,5 +1,0 @@
-author: west3436
-delete-after: true
-changes:
-- tweak: Unified planetary vaults (procgen, snaxi, and jungle) into one type.
-- experiment: Removed non-cave loot spawns from planets.
