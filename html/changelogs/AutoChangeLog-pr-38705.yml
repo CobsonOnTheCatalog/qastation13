@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Rapid construction devices can now set the access direction of fulltile
-    doors, and its inversion.
