@@ -1,0 +1,7 @@
+author: braplord
+delete-after: true
+changes:
+- rscadd: 'Deff: telescience now has its own patient dumpster'
+- tweak: 'Deff: added some items'
+- tweak: 'Deff: removed the body scanner from overflow'
+- bugfix: 'Deff: fixed some pipes'
