@@ -97,7 +97,7 @@ var/datum/subsystem/mapping/SSmapping
 	ruins_by_type["[RUIN_TYPE_XENO]"] = list()
 	ruins_by_type["[RUIN_TYPE_WET]"] = list()
 
-	var/list/ruins = subtypesof(/datum/map_element/ruin)
+	var/list/ruins = subtypesof(/datum/map_element/ruin) - typesof(/datum/map_element/ruin/story)
 	for(var/R in ruins)
 		var/datum/map_element/ruin/ME = new R()
 		for(var/type_flag in ruins_by_type)
