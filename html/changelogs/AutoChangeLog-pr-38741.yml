@@ -1,5 +1,0 @@
-author: Inorien
-delete-after: true
-changes:
-- bugfix: Archive-ready Diskset no longer contains an un-archivable NT disk if it
-    was researched
