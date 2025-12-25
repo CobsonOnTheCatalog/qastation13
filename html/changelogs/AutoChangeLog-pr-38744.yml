@@ -1,0 +1,4 @@
+author: Inorien
+delete-after: true
+changes:
+- bugfix: Cryo tubes now update their appearance correctly when equipment power drops
