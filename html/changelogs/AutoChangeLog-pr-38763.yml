@@ -1,5 +1,0 @@
-author: Inorien
-delete-after: true
-changes:
-- bugfix: Timers running on their own (no assembly) can count down once again, after
-    a week of holiday

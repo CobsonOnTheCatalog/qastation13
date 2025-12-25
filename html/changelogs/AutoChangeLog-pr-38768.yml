@@ -1,4 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- tweak: The wallrot random event no longer targets shuttles or shuttle walls.

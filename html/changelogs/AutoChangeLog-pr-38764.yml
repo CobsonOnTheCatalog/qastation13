@@ -1,5 +1,0 @@
-author: jwhitak
-delete-after: true
-changes:
-- bugfix: Admins will not get as spammed when research servers lose tech levels due
-    to heat damage.
