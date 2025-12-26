@@ -1,6 +1,0 @@
-author: Inorien
-delete-after: true
-changes:
-- bugfix: Custom religions work again
-- bugfix: Magnetically Suspended Gas Storage machine mouse drag pressure setting works
-    again
