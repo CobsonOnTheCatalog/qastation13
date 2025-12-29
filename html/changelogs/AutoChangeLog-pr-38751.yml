@@ -1,4 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Snow on cargo shuttles no longer blocks space for crates to be ordered.
