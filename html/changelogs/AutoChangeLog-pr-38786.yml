@@ -1,0 +1,5 @@
+author: Inorien
+delete-after: true
+changes:
+- bugfix: Dead, unconscious and otherwise movement-impaired people can no longer resist
+    out of inflatable shelters
