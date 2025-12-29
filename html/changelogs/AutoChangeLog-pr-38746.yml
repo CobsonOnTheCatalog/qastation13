@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: Handheld TVs can now view their camera bugs in their own window, with much
+    easier switching between them.
