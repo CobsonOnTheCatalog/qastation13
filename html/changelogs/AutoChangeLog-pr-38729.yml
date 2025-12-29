@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- tweak: The PDA multi-messager now has a proper UI with an option to turn poll sending
-    on or off on the page.
