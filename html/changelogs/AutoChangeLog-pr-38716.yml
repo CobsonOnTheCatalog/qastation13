@@ -1,0 +1,4 @@
+author: hacker-on-steroids
+delete-after: true
+changes:
+- tweak: mech RED module now uses the new RCD interface
