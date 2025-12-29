@@ -1,0 +1,10 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: Table doors can now be NPC tampered, wirejacked and AI hacked when electronics
+    are installed.
+- tweak: People can now be tabled on table doors when closed.
+- tweak: Table doors are now a little more animated when opening and closing.
+- bugfix: Table doors can now be emagged without access.
+- bugfix: Installing working electronics to a table door now removes the emagged state
+    of it.
