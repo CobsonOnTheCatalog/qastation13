@@ -1,0 +1,5 @@
+author: CrazyAmphibian
+delete-after: true
+changes:
+- rscadd: multitools have been given a firmware update that allows them to modify
+    the settings of certian atmospheric devices, such as vent pumps and scrubbers
