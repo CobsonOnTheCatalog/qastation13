@@ -1,0 +1,8 @@
+author: Inorien
+delete-after: true
+changes:
+- rscadd: Borgs may use the markers {AINAME} and {###} in their names for substitution
+    to their controlling AI name (or "AI" if one doesnt exist) and 3-digit ident code
+    respectively.
+- bugfix: People who got borged by machines like autoborger and malf recharge station
+    will no longer be called literal {AINAME} Minion {###}
