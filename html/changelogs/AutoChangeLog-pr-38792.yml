@@ -1,5 +1,0 @@
-author: Inorien
-delete-after: true
-changes:
-- bugfix: Assemblies can now be detached from door wires and vending machines and
-    stuff using an empty hand
