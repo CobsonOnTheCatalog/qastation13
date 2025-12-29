@@ -1,0 +1,5 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- bugfix: Fixed a 2 year old bug I accidentally caused where fireballs dealt far less
+    damage than they should. They are now powerful again.
