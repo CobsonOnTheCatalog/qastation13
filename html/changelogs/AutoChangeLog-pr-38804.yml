@@ -1,0 +1,4 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- bugfix: Shuttle turfs now count as blocked again for supply crate buying.
