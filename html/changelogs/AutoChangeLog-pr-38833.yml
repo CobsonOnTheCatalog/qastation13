@@ -1,0 +1,5 @@
+author: west3436
+delete-after: true
+changes:
+- bugfix: Removed a light tube floating in space on Box.
+- bugfix: Removed the Gas Extraction Console on the Box bridge.
