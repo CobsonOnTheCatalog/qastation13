@@ -1,0 +1,5 @@
+author: DeityLink
+delete-after: true
+changes:
+- soundadd: enhanced the smash sound that plays when hitting people with fire extinguisher
+    and some other weapons
