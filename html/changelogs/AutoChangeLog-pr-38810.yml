@@ -1,0 +1,4 @@
+author: Inorien
+delete-after: true
+changes:
+- bugfix: CHEATERS NEVER PROSPER Tetris won't remind you on every single line clear
