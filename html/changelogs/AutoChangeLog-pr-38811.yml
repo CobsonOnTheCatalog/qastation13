@@ -1,4 +1,0 @@
-author: Inorien
-delete-after: true
-changes:
-- bugfix: Piano UI doesn't flicker any more and can even be resized too

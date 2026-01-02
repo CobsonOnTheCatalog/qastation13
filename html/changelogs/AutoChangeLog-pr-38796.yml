@@ -1,9 +1,0 @@
-author: DeityLink
-delete-after: true
-changes:
-- rscadd: Cultists that just died now have a gauge on their screen that ticks down
-    how much time they have left to turn into shades. The gauge can be clicked as
-    a shortcut to the ghost verb.
-- bugfix: Fixed cultists opening the prompt to turn into a shade but clicking the
-    Shade button after the 60 seconds are up, resulting into their body turning to
-    dust...without them turning into a shade.
