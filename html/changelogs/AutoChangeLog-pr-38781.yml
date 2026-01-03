@@ -1,0 +1,7 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: R&D can now make stasis and bluespace vials, both for bluespace 4 and materials
+    6 research at 250 units of glass, iron, uranium and diamond; 1000 total. Bluespace
+    vials hold double the amount at 50 units, and stasis vials do not allow any reactions.
+    Relevant sprites for the vial boxes have also been added.
