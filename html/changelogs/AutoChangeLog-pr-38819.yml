@@ -1,4 +1,0 @@
-author: CrazyAmphibian
-delete-after: true
-changes:
-- bugfix: Fixed multitools being unable to change frequencies of atmos devices
