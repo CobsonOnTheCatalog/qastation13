@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- imageadd: Vox and plasmamen now have unique suffocation warning sprites, based on
+    the air they breathe.
