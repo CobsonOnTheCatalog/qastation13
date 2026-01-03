@@ -1,5 +1,0 @@
-author: jwhitak
-delete-after: true
-changes:
-- rscadd: The library may contain several library books already printed at round start.
-- rscadd: Library books may now be rarely found in maint.

@@ -1,4 +1,0 @@
-author: west3436
-delete-after: true
-changes:
-- tweak: Implemented backend changes to speed up zLevel creation.
