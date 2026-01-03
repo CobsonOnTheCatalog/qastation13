@@ -1,0 +1,5 @@
+author: vampirebat74
+delete-after: true
+changes:
+- bugfix: Fixed the fact that SCP-173 could not be pushed or pulled.
+- tweak: SCP-173 invulnerability removed and cooldowns assigned
