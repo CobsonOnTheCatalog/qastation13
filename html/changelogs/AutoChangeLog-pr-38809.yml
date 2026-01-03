@@ -1,0 +1,4 @@
+author: Inorien
+delete-after: true
+changes:
+- bugfix: AIs can once again toggle digital T valves
