@@ -1,7 +1,0 @@
-author: CrazyAmphibian
-delete-after: true
-changes:
-- bugfix: equalizone no longer increases total damage when you have non-organic limbs
-- tweak: equalizone synthesis is now more efficent
-- tweak: all fission reactions now take half as long, and make/require double the
-    power
