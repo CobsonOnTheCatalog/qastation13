@@ -1,0 +1,9 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Detective scanners, fingerprint cards, evidence bags, and other relevant
+    items can now be placed inside the detective's forensic computer without fiddling
+    with menus, if logged in and possible to do so.
+- tweak: Detective forensics computers now auto update their screen when scanning.
+- tweak: Detective forensic computers now have some actual nice looks to their UI,
+    with some formatting consistency on user messages too.
