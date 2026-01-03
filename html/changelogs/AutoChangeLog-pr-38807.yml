@@ -1,4 +1,0 @@
-author: Inorien
-delete-after: true
-changes:
-- bugfix: Roundstart open digital/manual valves no longer have a chance to be bricked
