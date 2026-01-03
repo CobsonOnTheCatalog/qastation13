@@ -1,0 +1,14 @@
+author: DeityLink
+delete-after: true
+changes:
+- rscadd: All mechas can now punch mobs, windows and grilles, when they have no weapons
+    equipped, a feat no longer reserved to combat mechas. By default their punchs
+    deal 10 damage to mobs, ripleys and clarkes deal 15, and combat mechas deal 30
+    (those are still the only one that can break walls).
+- rscadd: Mecha punchs are now also compatible with attack animations, courtesy of
+    Dilt
+- rscadd: Honkers punch deal no damage but play the bikehorn sound.
+- tweak: Unarmed mecha punchs now only have a 50% chance of paralyzing players, down
+    from 100%, giving their victims a chance of escaping.
+- bugfix: Unarmed mechas on harm intent can now punch down cult structures.
+- bugfix: Fixed mechas being able to punch mobs and objects through windows.
