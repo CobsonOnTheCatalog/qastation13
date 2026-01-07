@@ -1,4 +1,0 @@
-author: SonixApache
-delete-after: true
-changes:
-- bugfix: wiping off someone else's make-up now actually works

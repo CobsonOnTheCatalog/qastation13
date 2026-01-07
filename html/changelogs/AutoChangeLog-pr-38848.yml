@@ -1,4 +1,0 @@
-author: Inorien
-delete-after: true
-changes:
-- bugfix: AIs can once again state laws containing " without crashing their nanoui
