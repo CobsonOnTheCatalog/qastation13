@@ -1,0 +1,5 @@
+author: Inorien
+delete-after: true
+changes:
+- bugfix: Pipenets should build more reliably now, fixing strange cases where gas
+    wouldn't flow through devices
