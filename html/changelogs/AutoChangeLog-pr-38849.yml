@@ -1,0 +1,7 @@
+author: DeityLink
+delete-after: true
+changes:
+- imageadd: Added particles to the Occult Blood Test chemical reaction that display
+    the flames that were only depicted in flavor text until now.
+- imageadd: Added a custom sound to the Occult Blood Test chemical reaction that varies
+    in volume depending on how many flames are created.
