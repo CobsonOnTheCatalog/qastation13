@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- imageadd: The internals button now looks different if humanoid mobs breathe nitrogen
+    or plasma.
