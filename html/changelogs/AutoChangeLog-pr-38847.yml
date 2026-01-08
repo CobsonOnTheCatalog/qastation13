@@ -1,0 +1,8 @@
+author: DeityLink
+delete-after: true
+changes:
+- rscadd: Added a second close button to the rune drawing interface that isn't right
+    on top of your character.
+- rscadd: Hovering your cursor over the rune glyphs now displays a tooltip telling
+    you their (english) name (which could already be read in the bottom left corner
+    but many never noticed)
