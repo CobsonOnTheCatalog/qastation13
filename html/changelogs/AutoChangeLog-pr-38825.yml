@@ -1,5 +1,0 @@
-author: gurfan
-delete-after: true
-changes:
-- tweak: TTV explosions no longer have a max range when occurring outside the station's
-    Z level.
