@@ -1,0 +1,34 @@
+author: DeityLink
+delete-after: true
+changes:
+- experiment: Reworked the way impaired vision gets rendered. The "grate" effect has
+    been removed and instead a sphere of darkness and blurriness smoothly closes-in
+    around your character. At low impairment values (1-2), you will only see a bit
+    of blurriness in the corners of your view distance. At max impairment (10), it
+    looks just like when you were blind before.
+- experiment: Impairment increases based on your eye damage (with default eyes you
+    start seeing effects from 5 damage, but it now takes 35 damage to go fully blind),
+    whether you have the nearsightedness disability (3), whether you are wearing hats
+    or glasses that reduce your vision (welder hat/goggles for instance, 5), and decreases
+    when wearing prescription glasses (-3) or using advanced eyes (-2). It can also
+    increase temporarily from stuff that could previously temporarily blind you. Let
+    it be known that non-nearsighted people can still wear prescription glasses to
+    counteract other sources of vision impairment, such as welder helmets.
+- tweak: Imidazoline has been greatly enhanced at stopping temporary blindness over
+    a shorter period of time, on top of its previous benefits.
+- experiment: Reworked the way blurry vision gets rendered. It now makes your whole
+    screen (minus the UI) slightly blurry instead of a white fog appearing over everything
+    (aka cumvision).
+- bugfix: Fixed being able to see beyond the range of the old blindness sprites when
+    using binoculars, sniper, or farsight gene.
+- rscadd: Holding a cane now lets you see on the tile adjacent to yours regardless
+    of what type of blindness you have.
+- rscadd: Prescription Glasses now have the reverse effect for players who are NOT
+    nearsighted. Note that this applies specifically to glasses and scanner that have
+    prescription specified in their name. CMO Medhuds and any other types of glasses
+    that also provided nearsightedness correction still correct the eyesight of nearsighted
+    players, without making it blurry for non-nearsighted ones.
+- rscadd: The Cheap Glasses cargo crate now also contains a pair of cosmetic glasses.
+    Those look just like regular prescription glasses but with none of the eyesight
+    correction, allowing non-nearsighted player to wear those without seeing things
+    blurry.
