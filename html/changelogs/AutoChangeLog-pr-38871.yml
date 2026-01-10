@@ -1,0 +1,11 @@
+author: DeityLink
+delete-after: true
+changes:
+- bugfix: Fixed stuff that was supposed to instantly blind you such as a changeling's
+    sting, a pie to the face, or pepper spray. Those once again apply the full blindness
+    overlay immediately.
+- bugfix: Fixed temporary blindness durations that didn't account for the last 10
+    ticks no longer being full blindness, resulting it only the sides of the screen
+    being slightly blurry.
+- rscadd: Getting splatted by a pie now temporarily applies the old blurry (cumvision)
+    overlay
