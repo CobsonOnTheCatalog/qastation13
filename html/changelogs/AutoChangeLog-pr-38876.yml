@@ -1,0 +1,9 @@
+author: DeityLink
+delete-after: true
+changes:
+- bugfix: Fixed pepper spray specifically still having delayed blindness unless your
+    mouth was covered.
+- bugfix: The nearsightedness and blurriness effects are now disabled when you die
+    even if you remain in your corpse.
+- bugfix: Fixed the blindness overlay becoming visible to observers should they de-zoom
+    far enough.
