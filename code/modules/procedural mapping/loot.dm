@@ -393,7 +393,6 @@
 			/obj/structure/crystal,
 			/obj/item/clothing/under/grey/grey_soldier,
 			/obj/item/clothing/under/grey/grey_researcher,
-			/obj/machinery/power/supermatter/shard,
 			/obj/item/weapon/grenade/dudebomb,
 		),
 		VERY_RARE_LOOT = list(
@@ -406,7 +405,6 @@
 			/obj/machinery/auto_cloner,
 			/obj/machinery/communication,
 			/obj/machinery/replicator,
-			/obj/machinery/power/supermatter,
 		)
 	)
 
