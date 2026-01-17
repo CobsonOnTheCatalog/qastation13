@@ -1,4 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Crates should no longer spawn under the shuttle doors when bought.

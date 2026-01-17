@@ -1,6 +1,0 @@
-author: CrazyAmphibian
-delete-after: true
-changes:
-- rscdel: 'Jungle: removed foliage regrowth'
-- tweak: 'Jungle: adjusted backend mob typing'
-- tweak: 'Jungle: adjusted backend turf typing'
