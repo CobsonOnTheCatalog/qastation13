@@ -1,0 +1,6 @@
+author: DeityLink
+delete-after: true
+changes:
+- bugfix: Fixed a bunch of rendering issues (paintings being black, fire being opaque,
+    etc...)
+- tweak: Fire now gets rendered above objects and mobs. Let us know if you like it.
