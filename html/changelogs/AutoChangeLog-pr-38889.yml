@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: All maps now have the same two-stop system for unloading cargo crates now,
+    to accommodate their opening of windoors.
