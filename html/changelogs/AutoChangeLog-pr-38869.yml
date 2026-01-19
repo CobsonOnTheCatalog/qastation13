@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: Bots, mechas, and vehicles with valid access can now cross tape with valid
+    access.
