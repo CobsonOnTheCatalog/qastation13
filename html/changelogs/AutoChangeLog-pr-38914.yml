@@ -1,0 +1,11 @@
+author: braplord
+delete-after: true
+changes:
+- rscdel: 'Deff: visiting room removed'
+- rscadd: 'Deff: new interrogation room'
+- rscadd: 'Deff: a TV monitor was placed in the lobby, letting you spy on prisoners'
+- tweak: 'Deff: a few lobby changes'
+- tweak: 'Deff: moved the courtroom by a single tile'
+- tweak: 'Deff: moved or replaced objects in sec equipment, perma, and other adjacent
+    areas'
+- tweak: "Deff: small adjustments to captain's office"
