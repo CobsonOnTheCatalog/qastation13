@@ -1,0 +1,4 @@
+author: SonixApache
+delete-after: true
+changes:
+- bugfix: Certain spells no longer send the world global perform and cast messages.
