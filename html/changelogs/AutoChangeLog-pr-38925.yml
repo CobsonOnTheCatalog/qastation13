@@ -1,0 +1,9 @@
+author: DeityLink
+delete-after: true
+changes:
+- experiment: The General Settings tab of the Character Setup window has been split
+    into 4 tabs, including ones for Graphics, UI, and Audio settings.
+- experiment: The new Graphics Settings tab has a new Fancy Visual Filters toggle
+    to replace the new blurry and nearsightedness filters with alternatives that don't
+    rely on Byond's built-in filter effects. For players who either don't like the
+    filters, or who experience framedrops on their machine.
