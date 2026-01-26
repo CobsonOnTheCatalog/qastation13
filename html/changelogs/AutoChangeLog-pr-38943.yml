@@ -1,5 +1,0 @@
-author: DeityLink
-delete-after: true
-changes:
-- bugfix: Fixed nearsightedness and blurriness not being properly disabled when the
-    status effects expire and the fancy effects are disabled
