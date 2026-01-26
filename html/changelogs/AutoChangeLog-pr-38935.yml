@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- tweak: Bookshelves now accurately display the amount and color of books on their
-    shelves.
