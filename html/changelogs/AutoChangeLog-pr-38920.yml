@@ -1,0 +1,4 @@
+author: CrazyAmphibian
+delete-after: true
+changes:
+- tweak: air alarms and other atmos UIs will no longer show unimportant gasses
