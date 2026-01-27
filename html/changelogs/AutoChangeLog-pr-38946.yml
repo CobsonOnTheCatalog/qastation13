@@ -1,0 +1,4 @@
+author: Blonichu
+delete-after: true
+changes:
+- tweak: Changed pluck surgery to require Grab Intent.
