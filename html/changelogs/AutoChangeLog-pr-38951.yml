@@ -1,0 +1,4 @@
+author: Blonichu
+delete-after: true
+changes:
+- bugfix: Fixed a bug where wirecutters could not be used for ghetto implant surgery.
