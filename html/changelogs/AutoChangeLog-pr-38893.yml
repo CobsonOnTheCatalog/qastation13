@@ -1,0 +1,5 @@
+author: CrazyAmphibian
+delete-after: true
+changes:
+- rscadd: Added a new drink that traitors can order
+- tweak: soda should no longer give you hypothermia
