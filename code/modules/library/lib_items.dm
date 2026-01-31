@@ -377,33 +377,23 @@
 	else if(istype(W, /obj/item/weapon/barcodescanner))
 		var/obj/item/weapon/barcodescanner/scanner = W
 		if(!scanner.computer)
-			to_chat(user, "[W]'s screen flashes: 'No associated computer found!'")
+			to_chat(user, "<span class='warning'>[W]'s screen flashes: 'No associated computer found!'</span>")
 		else
-			switch(scanner.mode)
-				if(0)
-					scanner.book = src
-					to_chat(user, "[W]'s screen flashes: 'Book stored in buffer.'")
-				if(1)
-					scanner.book = src
-					scanner.computer.buffer_book = src.name
-					to_chat(user, "[W]'s screen flashes: 'Book stored in buffer. Book title stored in associated computer buffer.'")
-				if(2)
-					scanner.book = src
-					for(var/datum/borrowbook/b in scanner.computer.checkouts)
-						if(b.bookname == src.name)
-							scanner.computer.checkouts.Remove(b)
-							to_chat(user, "[W]'s screen flashes: 'Book stored in buffer. Book has been checked in.'")
-							return
-					to_chat(user, "[W]'s screen flashes: 'Book stored in buffer. No active check-out record found for current title.'")
-				if(3)
-					scanner.book = src
-					for(var/obj/item/weapon/book in scanner.computer.inventory)
-						if(book == src)
-							to_chat(user, "[W]'s screen flashes: 'Book stored in buffer. Title already present in inventory, aborting to avoid duplicate entry.'")
-							return
-					scanner.computer.inventory.Add(src)
-					to_chat(user, "[W]'s screen flashes: 'Book stored in buffer. Title added to general inventory.'")
-
+			if(!(src in scanner.computer.inventory))
+				scanner.computer.inventory.Add(src)
+				to_chat(user, "<span class='notice'>[W]'s screen flashes: 'Title added to general inventory.'</span>")
+				return
+			for(var/datum/borrowbook/b in scanner.computer.checkouts)
+				if(b.bookname == src.name)
+					scanner.computer.checkouts.Remove(b)
+					to_chat(user, "<span class='notice'>[W]'s screen flashes: 'Book has been checked in.'</span>")
+					return
+			if(!scanner.book)
+				scanner.book = src
+				scanner.computer.buffer_book = src.name
+				scanner.computer.screenstate = CHECKOUT_BOOK
+				scanner.computer.updateUsrDialog()
+				to_chat(user, "<span class='notice'>[W]'s screen flashes: 'Book stored in buffer. Book title stored in associated computer buffer.'</span>")
 	else if(istype(W, /obj/item/weapon/paper/talisman))
 		var/obj/item/weapon/paper/talisman/talisman = W
 		if(runestun)
@@ -521,31 +511,13 @@
 	flags = FPRINT
 	var/obj/machinery/computer/library/checkout/computer // Associated computer - Modes 1 to 3 use this
 	var/obj/item/weapon/book/book	 //  Currently scanned book
-	var/mode = 0 					// 0 - Scan only, 1 - Scan and Set Buffer, 2 - Scan and Attempt to Check In, 3 - Scan and Attempt to Add to Inventory
 
-/obj/item/weapon/barcodescanner/attack_self(mob/user as mob)
-	mode += 1
-	if(mode > 3)
-		mode = 0
-	to_chat(user, "[src] Status Display:")
-	var/modedesc
-	switch(mode)
-		if(0)
-			modedesc = "Scan book to local buffer."
-		if(1)
-			modedesc = "Scan book to local buffer and set associated computer buffer to match."
-		if(2)
-			modedesc = "Scan book to local buffer, attempt to check in scanned book."
-		if(3)
-			modedesc = "Scan book to local buffer, attempt to add book to general inventory."
-		else
-			modedesc = "ERROR"
-	to_chat(user, " - Mode [mode] : [modedesc]")
+/obj/item/weapon/barcodescanner/examine(mob/user, size, show_name)
+	. = ..()
 	if(src.computer)
 		to_chat(user, "<font color=green>Computer has been associated with this unit.</font>")
 	else
 		to_chat(user, "<font color=red>No associated computer found. Only local scans will function properly.</font>")
-	to_chat(user, "\n")
 
 /obj/item/weapon/barcodescanner/Destroy()
 	book = null
