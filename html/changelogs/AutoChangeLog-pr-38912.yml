@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: Janicarts can now be verb toggled to turn autocleaning off, on everything
+    except advanced floor graffiti, or on everything.
