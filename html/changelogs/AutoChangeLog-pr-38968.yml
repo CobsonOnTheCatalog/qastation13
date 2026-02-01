@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- bugfix: Printed database books from checkout computers now have their proper spine
+    colors for each icon state.
