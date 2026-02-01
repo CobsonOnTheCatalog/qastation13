@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- imageadd: Gas overlays no longer look the same on every turf, now being varied a
+    bit for plasma, cryotheum and N2O.
