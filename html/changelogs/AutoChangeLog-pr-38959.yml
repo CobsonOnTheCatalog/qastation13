@@ -1,4 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Empty bookbags can now be filled with the contents of a bookcase shelf.
