@@ -1,4 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- tweak: Destination tagger UIs are now wide enough to see all of its rows.
