@@ -1,4 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Basic browser datum popups now account for DPI.
