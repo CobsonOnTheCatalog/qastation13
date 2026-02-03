@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- imageadd: Book spines on bookcases can now have unique spine colours to further
-    distinugish them
