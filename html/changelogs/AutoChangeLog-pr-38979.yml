@@ -1,0 +1,6 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- bugfix: The erroneous white pixel from Defficiency's mancrowave sprite has been
+    removed
+- bugfix: GALizing mancrowave beds now have a visible sprite on Defficiency.
