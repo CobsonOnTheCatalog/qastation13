@@ -1,6 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Admins can now make use of procnades, that, when spawned and used by someone
-    with debug privileges, can be set to call a proc on type filtered atoms in a range
-    when thrown at a desired turf.
