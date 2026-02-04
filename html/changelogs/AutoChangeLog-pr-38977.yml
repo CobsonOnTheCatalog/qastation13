@@ -1,0 +1,6 @@
+author: braplord
+delete-after: true
+changes:
+- tweak: 'Deff: perma maint windows dont have rwalls beneath them anymore'
+- bugfix: 'Deff: double airlock in the brig was removed'
+- bugfix: 'Deff: library computer in perma was made accessible again'
