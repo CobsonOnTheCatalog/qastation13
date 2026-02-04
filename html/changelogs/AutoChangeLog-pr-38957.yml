@@ -1,0 +1,6 @@
+author: DeityLink
+delete-after: true
+changes:
+- tweak: Bleach is now much more efficient at cleaning. Previously part of its function
+    required 1u of it to be used at once (namely to remove paint from floors). Now
+    any amount of bleach in a mix will provide its full effects.
