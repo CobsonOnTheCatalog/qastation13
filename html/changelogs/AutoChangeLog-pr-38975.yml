@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: Corium is now much more likely to show up in explosions from fission reactors,
+    with only a 5% chance of deletion.
