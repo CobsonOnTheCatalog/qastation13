@@ -1,0 +1,6 @@
+author: DeityLink
+delete-after: true
+changes:
+- rscadd: Added Suit Jackets that can be sewn from cloth. Same cost and crafting duration
+    as a labcoat, can have its buttons separately dyed.
+- rscadd: Examining a Cauldron now tells you how to pour or remove reagents from them.
