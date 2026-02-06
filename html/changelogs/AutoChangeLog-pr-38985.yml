@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- tweak: Admin test dummies and centcomm officials now have their own accounts on
-    their IDs, with infinite funds.
