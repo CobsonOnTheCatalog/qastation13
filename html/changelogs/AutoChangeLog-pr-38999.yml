@@ -1,7 +1,0 @@
-author: west3436
-delete-after: true
-changes:
-- bugfix: Fixed the Vox Trade Probe sending players to deep space when they enter
-    it.
-- bugfix: Fixed the climate computers in the Snaxi space lounge not showing the surface's
-    weather.
