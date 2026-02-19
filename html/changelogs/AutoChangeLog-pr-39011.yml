@@ -1,0 +1,4 @@
+author: CrazyAmphibian
+delete-after: true
+changes:
+- bugfix: fixed some bugs due to virtual z-levels on jungle
