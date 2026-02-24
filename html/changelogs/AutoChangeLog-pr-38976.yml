@@ -1,8 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Ambrosia seeds of all kind are more plentiful on april 20th, being stocked
-    to 420 on seed vendors, with 420 deus seeds in premium, and with discounted cruciatus
-    uplink items.
-- rscadd: Seed vendors now replenish their ambrosia vulgaris (and deus if applicable)
-    stock on 4:20pm GMT in real life time.
