@@ -1,0 +1,4 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- bugfix: Windows now show up properly on cameras and similar image renderings again.
