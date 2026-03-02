@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Basketballs no longer phase into walls or dense contents when bounced, instead
-    just landing on the tile the user is on.

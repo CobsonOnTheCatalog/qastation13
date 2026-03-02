@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- imageadd: Broken and burnt tiles now have many, many more unique sprites thanks
-    to the overlay system.
