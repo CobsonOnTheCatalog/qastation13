@@ -1,0 +1,5 @@
+author: CrazyAmphibian
+delete-after: true
+changes:
+- rscadd: Bloody footsteps (and other decals) can now appear on the asteroid (among
+    other tiles). traitors beware!
