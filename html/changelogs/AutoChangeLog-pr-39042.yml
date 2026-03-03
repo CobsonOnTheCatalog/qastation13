@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- bugfix: Screwdrivers and crowbars now work on auto outfitters, allowing their panels
-    to be opened and parts to be pried out.
