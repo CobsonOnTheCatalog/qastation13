@@ -1,0 +1,4 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- bugfix: Gibtonite can now be put into and taken out of gibtonite satchels properly.
