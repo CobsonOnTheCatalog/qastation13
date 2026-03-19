@@ -1,0 +1,4 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: Reinforced windows on all maps no longer have odd pixel offsets.
