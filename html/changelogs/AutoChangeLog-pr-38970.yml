@@ -1,0 +1,6 @@
+author: west3436
+delete-after: true
+changes:
+- bugfix: Fixed an overlap between the Vox Trade Ship and Exploration Shuttle on Waystation.
+- bugfix: Fixed an incorrect docking port type on the Deff Exploration Shuttle preventing
+    it from being used.
