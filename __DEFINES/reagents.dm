@@ -42,6 +42,8 @@
 #define SACREDWATER 		"sacredwater"
 #define SEROTROTIUM 			"serotrotium"
 #define SILICA 			"silica"
+#define SAWDUST 			"sawdust"
+#define PULP 			"pulp"
 #define SILICATE 			"silicate"
 #define OXYGEN 			"oxygen"
 #define COPPER 			"copper"
