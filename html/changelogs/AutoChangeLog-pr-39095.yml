@@ -1,0 +1,4 @@
+author: Eneocho
+delete-after: true
+changes:
+- bugfix: Chef sauce will now look like they were supposed to.
