@@ -73,6 +73,15 @@ ADDING CREDITS?  EDIT templates/changelog.tmpl.html
 		*** DO NOT FUCK WITH THIS FILE OR YOU WILL CAUSE MERGE CONFLICTS. ***
 		-->
 		<div class="commit sansserif">
+			<h2 class="date">2026.04.03</h2>
+			<h3 class="author">SECBATON-GRIFFON updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">All shoal credits stored in a round go into their new reserve in the next one. This cannot be removed like normal shoal credits, but still count towards discounts. Reserves do not carry more than one round, so only what was deposited in the previous is added.</li>
+				<li class="rscadd">Urinals can now &#34;flush&#34; on use. This can be interacted with by any held item, or any mob held in a grab up to it. If the water source inside (which now exists) is empty, it will not flush or flushing will end.</li>
+				<li class="tweak">Urinals can now be unanchored and anchored, along with verb rotation support. This automatically updates its position on relevant nearby walls.</li>
+				<li class="tweak">Crowbar destroying a urinal now removes its water source.</li>
+				<li class="tweak">The codebreaker now uses a proper delay bar system for cracking the nuke.</li>
+			</ul>
 			<h2 class="date">2026.04.01</h2>
 			<h3 class="author">CrazyAmphibian updated:</h3>
 			<ul class="changes bgimages16">
@@ -1427,11 +1436,6 @@ ADDING CREDITS?  EDIT templates/changelog.tmpl.html
 				<li class="bugfix">Fixed a decade-old bug where items printed at fabricators would only contain one material. This happened because as the code went through each material to readjust it when printed it would reset the list of materials each time.</li>
 				<li class="bugfix">Contents of printed items at fabricators such as the Protolathe will now also have their materials adjusted.</li>
 				<li class="bugfix">The high-precision laser scalpel and high-precision laser cautery now contain uranium.</li>
-			</ul>
-			<h2 class="date">2025.08.26</h2>
-			<h3 class="author">Eneocho updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Nanotrasen Engineers patched a faulty sensor on Fission Reactor controllers, letting them turn Plasma into Phazon once again, at the original rate (20u Plasma per 1u Phazon, at a heavy time investment).</li>
 			</ul>
 		</div>
 		<!--

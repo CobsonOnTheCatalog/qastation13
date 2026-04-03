@@ -1,9 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Urinals can now "flush" on use. This can be interacted with by any held
-    item, or any mob held in a grab up to it. If the water source inside (which now
-    exists) is empty, it will not flush or flushing will end.
-- tweak: Urinals can now be unanchored and anchored, along with verb rotation support.
-    This automatically updates its position on relevant nearby walls.
-- tweak: Crowbar destroying a urinal now removes its water source.
