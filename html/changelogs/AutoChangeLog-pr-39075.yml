@@ -1,0 +1,7 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: All shoal credits stored in a round go into their new reserve in the next
+    one. This cannot be removed like normal shoal credits, but still count towards
+    discounts. Reserves do not carry more than one round, so only what was deposited
+    in the previous is added.
