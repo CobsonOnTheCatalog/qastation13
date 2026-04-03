@@ -1,0 +1,4 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: The codebreaker now uses a proper delay bar system for cracking the nuke.
