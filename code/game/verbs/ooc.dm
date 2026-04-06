@@ -16,6 +16,10 @@ var/adminbus_ooc_color
 		to_chat(src, "Guests may not use OOC.")
 		return
 
+	// grab prefix before sanitizing
+	// is this bad??
+	// uhm... maybe
+	var/prefix = copytext(msg, 1, 2)
 	msg = copytext(sanitize(msg), 1, MAX_MESSAGE_LEN)
 	msg = parse_emoji(msg, ooc_mode = TRUE)
 	if(!msg)
@@ -49,6 +53,15 @@ var/adminbus_ooc_color
 		if(!isnewplayer(mob) && ((copytext(msg, 1, 2) in list(".",";",":","#")) || (findtext(lowertext(copytext(msg, 1, 5)), "say"))))
 			if(alert("Your message \"[msg]\" looks like it was meant for in game communication, say it in OOC?", "Meant for OOC?", "No", "Yes") != "Yes")
 				return
+
+	switch (prefix)
+		if (">")
+			msg = "<font color='#789922'>[msg]</font>"
+		if ("<")
+			msg = "<font color='#f6750b'>[msg]</font>"
+		if ("^")
+			msg = "<font color='#4c4cff'>[msg]</font>"
+
 	log_ooc("[mob.name]/[key] (@[mob.x],[mob.y],[mob.z]): [msg]")
 
 	// browserOutput.css and browserOutput_dark.css determine the default OOC color.
