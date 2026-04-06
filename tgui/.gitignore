@@ -15,6 +15,8 @@ package-lock.json
 ## Build artifacts
 /public/.tmp/**/*
 /public/**/*
+/public/tgui-panel.bundle.js
+/public/tgui.bundle.css
 !/public/*.html
 !/public/ntos-error.min.css
 !/public/helpers.min.js
