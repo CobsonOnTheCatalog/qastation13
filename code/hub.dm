@@ -7,19 +7,21 @@ If not, let us know on the main tgstation IRC channel of irc.rizon.net #tgstatio
 	name = "Space Station 13"
 */
 
-#define OPEN_TO_HUB_PLAYERCOUNT_DEFAULT 15
-#define DEFAULT_SERVER_NAME "/vg/station"
-#define DEFAULT_SERVER_DESC " - Not dead yet!"
+#define OPEN_TO_HUB_PLAYERCOUNT_DEFAULT 67
+#define DEFAULT_SERVER_NAME "Sharty Station 13"
+#define DEFAULT_SERVER_DESCRIPTION "Back in action!"
 
 /world
 	hub = "Exadv1.spacestation13"
 	hub_password = "SORRYNOPASSWORD"
-	name = "/vg/station"
+	name = "Sharty Station 13"
 
+var/descriptions = file2list("config/names/server_descs.txt")
+var/description = pick(descriptions)
 
 var/global/byond_hub_open = FALSE
 var/global/byond_server_name = DEFAULT_SERVER_NAME
-var/global/byond_server_desc = DEFAULT_SERVER_DESC
+var/global/byond_server_desc = description
 var/global/byond_hub_playercount = OPEN_TO_HUB_PLAYERCOUNT_DEFAULT
 
 /datum/admins/proc/HubPanel()
