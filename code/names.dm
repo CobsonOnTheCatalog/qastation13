@@ -18,6 +18,9 @@ var/list/grey_first_female_h = file2list("config/names/grey_first_female(h).txt"
 var/list/grey_last_h = file2list("config/names/grey_last(h).txt")
 var/list/judge_male_names = file2list("config/names/judge_male.txt")
 var/list/judge_female_names = file2list("config/names/judge_female.txt")
+var/list/station_names = file2list("config/names/station_names.txt")
+var/list/station_prefixes = file2list("config/names/station_prefixes.txt")
+var/list/station_suffixes = file2list("config/names/station_suffixes.txt")
 
 var/list/verbs = file2list("config/names/verbs.txt")
 var/list/adjectives = file2list("config/names/adjectives.txt")
