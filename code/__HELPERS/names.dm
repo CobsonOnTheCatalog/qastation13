@@ -79,7 +79,7 @@ var/religion_name = null
 		name = copytext(Holiday,1,i)
 		fullname += name + " "
 	else
-		name = pick("", station_prefixes)
+		name = pick(station_prefixes)
 		if(name)
 			fullname += name + " "
 
