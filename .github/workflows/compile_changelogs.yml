@@ -28,15 +28,15 @@ jobs:
         run: python tools/changelog/ss13_genchangelog.py html/changelog.html html/changelogs
       - name: Commit
         run: |
-          git config --local user.email "misterserver123@gmail.com"
-          git config --local user.name "D3athrow-Issues"
+          git config --local user.name "AutoJanny[bot]"
+          git config --local user.email "256854404+autojanny[bot]@users.noreply.github.com"
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Automatic changelog compile [ci skip]" -a || true
           fi
-          git pull origin Bleeding-Edge --rebase
+          git pull origin master --rebase
       - name: Push
         uses: CasperWA/push-protected@v2
         with:
           #github_token: ${{ secrets.GITHUB_TOKEN }} Use this instead if you have unprotected branches
-          token: ${{ secrets.CL_TOKEN }} 
-          branch: Bleeding-Edge
+          token: ${{ secrets.CL_TOKEN }}
+          branch: master
