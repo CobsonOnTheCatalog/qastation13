@@ -82,6 +82,9 @@ var/global/firstblood = FALSE
 		log_game("[key_name(src)] has died at [get_area(place_of_death)]. Coordinates: ([get_coordinates_string(src)])")
 		if (iscultist(src))
 			DisplayUI("Shade Timer")
+		// Get outta there!
+		ghostize()
+
 	is_dying = FALSE
 
 /mob/proc/transmog_death()
