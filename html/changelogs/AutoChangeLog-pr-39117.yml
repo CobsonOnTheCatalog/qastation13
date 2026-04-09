@@ -1,0 +1,4 @@
+author: CrazyAmphibian
+delete-after: true
+changes:
+- bugfix: powercreepers should no longer spread through the jungle infinitely
