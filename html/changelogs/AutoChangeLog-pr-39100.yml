@@ -1,0 +1,4 @@
+author: Eneocho
+delete-after: true
+changes:
+- tweak: Canvas UI will now group available colors into sets of 5, for easier counting.
