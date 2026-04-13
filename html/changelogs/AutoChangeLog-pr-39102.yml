@@ -1,0 +1,5 @@
+author: west3436
+delete-after: true
+changes:
+- bugfix: Fixed Wasteland and Jungle planet types never rolling.
+- bugfix: Fixed multiple Pacification Beacon bugs.
