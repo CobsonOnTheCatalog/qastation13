@@ -1,6 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Light replacers can now also recycle their supply box.
-- rscadd: Light replacers now use a sheet amount UI like lathes for inserting glass
-    and cardboard, instead of only accepting one at a time.

@@ -1,6 +1,0 @@
-author: CrazyAmphibian
-delete-after: true
-changes:
-- rscadd: Added a new food item, created with dinosaur meat.
-- rscadd: expanded butchering products for several jungle mobs, hunters rejoice!
-- tweak: tweaked jungle mob AI so that mobs will be less likely to go extinct.

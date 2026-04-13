@@ -1,5 +1,0 @@
-author: Inorien
-delete-after: true
-changes:
-- bugfix: You can now embed lots of different video formats on nanopaper. It can't
-    autoplay though.
