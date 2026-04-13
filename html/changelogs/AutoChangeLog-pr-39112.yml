@@ -1,0 +1,5 @@
+author: boy2mantwicethefam
+delete-after: true
+changes:
+- tweak: If the Curse of Norwood spellbook shows up in the wizard's spellbook bundle
+    it will now cause another spellbook to appear.
