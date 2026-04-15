@@ -11,9 +11,67 @@
 
 	mymob.visible.pointer_to_var = &mymob.visible
 
+	mymob.respawn = new /obj/abstract/screen
+	mymob.respawn.icon = 'icons/mob/screen1_ghost.dmi'
+	mymob.respawn.icon_state = "respawn"
+	mymob.respawn.name = "respawn"
+	mymob.respawn.screen_loc = ui_ghost_respawn
+
+	mymob.respawn.pointer_to_var = &mymob.respawn
+
+	mymob.reenter_corpse = new /obj/abstract/screen
+	mymob.reenter_corpse.icon = 'icons/mob/screen1_ghost.dmi'
+	mymob.reenter_corpse.icon_state = "reenter_corpse"
+	mymob.reenter_corpse.name = "reenter_corpse"
+	mymob.reenter_corpse.screen_loc = ui_ghost_reenter_corpse
+
+	mymob.reenter_corpse.pointer_to_var = &mymob.reenter_corpse
+
+	mymob.teleport_to = new /obj/abstract/screen
+	mymob.teleport_to.icon = 'icons/mob/screen1_ghost.dmi'
+	mymob.teleport_to.name = "teleport"
+	mymob.teleport_to.icon_state = "teleport"
+	mymob.teleport_to.screen_loc = ui_ghost_teleport
+
+	mymob.teleport_to.pointer_to_var = &mymob.teleport_to
+
+	mymob.become_mouse = new /obj/abstract/screen
+	mymob.become_mouse.icon = 'icons/mob/screen1_ghost.dmi'
+	mymob.become_mouse.icon_state = "become_mouse"
+	mymob.become_mouse.name = "become_mouse"
+	mymob.become_mouse.screen_loc = ui_ghost_mouse
+
+	mymob.become_mouse.pointer_to_var = &mymob.become_mouse
+
+	mymob.toggle_darkness = new /obj/abstract/screen
+	mymob.toggle_darkness.icon = 'icons/mob/screen1_ghost.dmi'
+	mymob.toggle_darkness.icon_state = "fullbright"
+	mymob.toggle_darkness.name = "toggle_darkness"
+	mymob.toggle_darkness.screen_loc = ui_ghost_toggle_darkness
+
+	mymob.toggle_darkness.pointer_to_var = &mymob.toggle_darkness
+
+	mymob.toggle_medhud = new /obj/abstract/screen
+	mymob.toggle_medhud.icon = 'icons/mob/screen1_ghost.dmi'
+	mymob.toggle_medhud.icon_state = "medhud"
+	mymob.toggle_medhud.name = "toggle_medhud"
+	mymob.toggle_medhud.screen_loc = ui_ghost_toggle_medhud
+
+	mymob.toggle_medhud.pointer_to_var = &mymob.toggle_medhud
+
+	mymob.hide_ghosts = new /obj/abstract/screen
+	mymob.hide_ghosts.icon = 'icons/mob/screen1_ghost.dmi'
+	mymob.hide_ghosts.icon_state = "hide_ghosts"
+	mymob.hide_ghosts.name = "hide_ghosts"
+	mymob.hide_ghosts.screen_loc = ui_ghost_hide_ghosts
+
+	mymob.hide_ghosts.pointer_to_var = &mymob.hide_ghosts
+
 	mymob.client.reset_screen()
 
-	mymob.client.screen += list(mymob.visible)
+	mymob.client.screen += list(mymob.visible, mymob.respawn, mymob.reenter_corpse, mymob.teleport_to, mymob.become_mouse, mymob.toggle_darkness, mymob.toggle_medhud, mymob.hide_ghosts)
+
+
 
 /datum/hud/proc/corgi_hud()
 

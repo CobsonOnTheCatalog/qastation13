@@ -16,7 +16,15 @@
 	var/obj/abstract/screen/pullin = null
 	var/obj/abstract/screen/kick_icon = null
 	var/obj/abstract/screen/bite_icon = null
-	var/obj/abstract/screen/visible = null
+	var/obj/abstract/screen/visible = null // ghost
+	var/obj/abstract/screen/respawn = null // ghost
+	var/obj/abstract/screen/reenter_corpse = null // ghost
+	var/obj/abstract/screen/teleport_to = null // ghost
+	var/obj/abstract/screen/boo = null // ghost
+	var/obj/abstract/screen/toggle_medhud = null // ghost
+	var/obj/abstract/screen/toggle_darkness = null // ghost
+	var/obj/abstract/screen/become_mouse = null // ghost
+	var/obj/abstract/screen/hide_ghosts = null // ghost
 	var/obj/abstract/screen/internals = null
 	var/obj/abstract/screen/i_select = null
 	var/obj/abstract/screen/m_select = null

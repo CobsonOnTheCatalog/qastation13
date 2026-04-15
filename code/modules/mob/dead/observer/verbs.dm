@@ -47,9 +47,11 @@
 	if(detected_hud)
 		remove_hud(detected_hud)
 		to_chat(src, "<span class='notice'><B>Medical HUD disabled.</B></span>")
+		toggle_medhud.icon_state = "medhud"
 	else
 		apply_hud(new /datum/visioneffect/medical)
 		to_chat(src, "<span class='notice'><B>Medical HUD enabled.</B></span>")
+		toggle_medhud.icon_state = "medhud_on"
 
 /mob/dead/observer/verb/toggle_secHUD()
 	set category = "Ghost"
@@ -441,10 +443,12 @@
 	if(client.ghost_planemaster.alpha == 255)
 		client.ghost_planemaster.alpha = 0
 		client.ghost_planemaster.mouse_opacity = 0
+		hide_ghosts.icon_state = "hide_ghosts_on"
 		to_chat(src, "<span class='info'>Ghosts hidden.</span>")
 	else
 		client.ghost_planemaster.alpha = 255
 		client.ghost_planemaster.mouse_opacity = 1
+		hide_ghosts.icon_state = "hide_ghosts"
 		to_chat(src, "<span class='info'>Ghosts shown.</span>")
 
 /mob/dead/observer/verb/toggle_station_map()

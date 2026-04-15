@@ -153,3 +153,12 @@
 //Cult HUD
 #define ui_cult_Act "WEST+0:[6*PIXEL_MULTIPLIER],SOUTH+5:[15*PIXEL_MULTIPLIER]"
 #define ui_cult_tattoos "WEST+0:[6*PIXEL_MULTIPLIER], SOUTH+4:[13*PIXEL_MULTIPLIER]"
+
+// Ghost HUD
+#define ui_ghost_hide_ghosts "SOUTH:[6*PIXEL_MULTIPLIER],CENTER-3:[24*PIXEL_MULTIPLIER]"
+#define ui_ghost_mouse "SOUTH:[6*PIXEL_MULTIPLIER],CENTER-2:[24*PIXEL_MULTIPLIER]"
+#define ui_ghost_respawn "SOUTH:[6*PIXEL_MULTIPLIER],CENTER-1:[24*PIXEL_MULTIPLIER]"
+#define ui_ghost_reenter_corpse "SOUTH:[6*PIXEL_MULTIPLIER],CENTER:[24*PIXEL_MULTIPLIER]"
+#define ui_ghost_teleport "SOUTH:[6*PIXEL_MULTIPLIER],CENTER+1:[24*PIXEL_MULTIPLIER]"
+#define ui_ghost_toggle_darkness "SOUTH+1:[6*PIXEL_MULTIPLIER],CENTER+1:[24*PIXEL_MULTIPLIER]"
+#define ui_ghost_toggle_medhud "SOUTH+1:[6*PIXEL_MULTIPLIER],CENTER+2:[24*PIXEL_MULTIPLIER]"

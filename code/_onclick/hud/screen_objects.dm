@@ -632,6 +632,42 @@
 		if("Toggle Gun Mode")
 			usr.client.ToggleGunMode()
 
+		// ghost buttons
+		if("reenter_corpse")
+			if(isobserver(usr))
+				var/mob/dead/observer/G = usr
+				G.reenter_corpse()
+
+		if("respawn")
+			if(isobserver(usr))
+				var/mob/dead/observer/G = usr
+				G.abandon_mob()
+
+		if("teleport")
+			if(isobserver(usr))
+				var/mob/dead/observer/G = usr
+				G.follow()
+
+		if("become_mouse")
+			if(isobserver(usr))
+				var/mob/dead/observer/G = usr
+				G.become_mouse()
+
+		if("toggle_darkness")
+			if(isobserver(usr))
+				var/mob/dead/observer/G = usr
+				G.toggle_darkness()
+
+		if("toggle_medhud")
+			if(isobserver(usr))
+				var/mob/dead/observer/G = usr
+				G.toggle_medHUD()
+
+		if("hide_ghosts")
+			if(isobserver(usr))
+				var/mob/dead/observer/G = usr
+				G.hide_ghosts()
+
 		else
 			return 0
 	return 1

@@ -31,7 +31,7 @@ var/creating_arena = FALSE
 	var/obj/item/device/station_map/station_holomap = null
 
 	var/can_reenter_corpse
-	var/datum/hud/living/carbon/hud = null // hud
+	// var/datum/hud/living/carbon/hud = null // hud
 	var/bootime = 0
 	var/next_poltergeist = 0
 	var/started_as_observer //This variable is set to 1 when you enter the game as an observer.
@@ -56,12 +56,12 @@ var/creating_arena = FALSE
 
 	// Our new boo spell.
 	add_spell(new /spell/aoe_turf/boo, "grey_spell_ready")
-	add_spell(new /spell/targeted/ghost/toggle_medHUD)
-	add_spell(new /spell/targeted/ghost/toggle_darkness)
-	add_spell(new /spell/targeted/ghost/become_mouse)
-	add_spell(new /spell/targeted/ghost/hide_ghosts)
-	add_spell(new /spell/targeted/ghost/haunt)
-	add_spell(new /spell/targeted/ghost/reenter_corpse)
+	// add_spell(new /spell/targeted/ghost/toggle_medHUD)
+	// add_spell(new /spell/targeted/ghost/toggle_darkness)
+	// add_spell(new /spell/targeted/ghost/become_mouse)
+	// add_spell(new /spell/targeted/ghost/hide_ghosts)
+	// add_spell(new /spell/targeted/ghost/haunt)
+	// add_spell(new /spell/targeted/ghost/reenter_corpse)
 	//add_spell(new /spell/ghost_show_map, "grey_spell_ready")
 
 	can_reenter_corpse = flags & GHOST_CAN_REENTER
