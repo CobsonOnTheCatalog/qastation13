@@ -54,6 +54,28 @@ var/adminbus_ooc_color
 			if(alert("Your message \"[msg]\" looks like it was meant for in game communication, say it in OOC?", "Meant for OOC?", "No", "Yes") != "Yes")
 				return
 
+	// == red text
+	var/first_red = findtext(msg, "==")
+	var/last_red = findlasttext(msg, "==")
+	if (first_red)
+		if(first_red == last_red)
+			msg = replacetext(msg, "==", "<span style='color:#af0a0f; font-size: 20px;'>")
+			msg += "</span>"
+		else
+			msg = replacetext(msg, "==", "<span style='color: #af0a0f; font-size: 20px;'>")
+			msg = replacetext(msg, "==", "</span>", first_red+1, last_red)
+
+	// %% glowing text
+	var/first_glow = findtext(msg, "%%")
+	var/last_glow = findlasttext(msg, "%%")
+	if (first_glow)
+		if(first_glow == last_glow)
+			msg = replacetext(msg, "%%", "<span style='color:#00ff33; text-shadow: 0 0 40px #00fe20, 0 0 5px #00fe20;'>")
+			msg += "</span>"
+		else
+			msg = replacetext(msg, "%%", "<span style='color:#00ff33; text-shadow: 0 0 40px #00fe20, 0 0 5px #00fe20;'>")
+			msg = replacetext(msg, "==", "</span>", first_glow+1, last_glow)
+
 	switch (prefix)
 		if (">")
 			msg = "<font color='#789922'>[msg]</font>"
