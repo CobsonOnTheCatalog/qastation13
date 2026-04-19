@@ -1,0 +1,7 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- rscadd: Unplated reinforced walls can now accept any kind of mineral sheet (namely
+    wood, logs, gold, silver, uranium, diamond, bananium, bricks and plastic) to make
+    reinforced mineral walls. Removal of this plating turns these back into regular
+    unplated walls.
