@@ -139,8 +139,13 @@
 		if(client.holder?.rights & R_DEBUG)
 			winset(client, null, list("browser-options"="+devtools"))
 
-	if(client)
-		client.CAN_MOVE_DIAGONALLY = 0
+	// dear coder
+	// please keep this on
+	// its so fucking funny
+	// if you dont want it on
+	// go to move_loop.dm
+	//if(client)
+	//	client.CAN_MOVE_DIAGONALLY = TRUE
 
 	if(iscluwnebanned(src) && (timeofdeath > 0 || !iscluwne(src)))
 		log_admin("Cluwnebanned player [key_name(src)] attempted to join and was kicked.")
