@@ -35,7 +35,9 @@ Trial Admin		+@ +SPAWN +REJUV +VAREDIT +BAN
 Badmin			+@ +POSSESS +BUILDMODE +SERVER +FUN
 Game Admin		+@ +STEALTH +SOUNDS +DEBUG
 Game Master		+EVERYTHING
+Mentor With Benefits +EVERYTHING
 
 Host			+EVERYTHING
+Epic Soy Lord (Cuck Master) +EVERYTHING
 
 Coder			+DEBUG +VAREDIT +SERVER +SPAWN

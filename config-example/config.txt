@@ -183,16 +183,17 @@ GUEST_BAN
 # USEWHITELIST
 
 ## set a server location for world reboot. Don't include the byond://, just give the address and port.
-# SERVER ss13.example.com:2506
+SERVER ss13.soyjak.st:8888
 
 ## forum address
-# FORUMURL http://example.com
+FORUMURL https://soyjak.st
 
 ## Wiki address
-# WIKIURL http://example.com
+# Oh Wikicux!
+WIKIURL https://soyjakwiki.org
 
 ## Ban appeals URL - usually for a forum or wherever people should go to contact your admins.
-# BANAPPEALS http://example.com
+BANAPPEALS https://webirc.soyjak.st
 
 ## In-game features
 ## spawns a spellbook which gives object-type spells instead of verb-type spells for the wizard
@@ -397,3 +398,6 @@ BRANCH_HEAD .git/refs/heads/Bleeding-Edge
 
 ## Location of rsc string
 # RSCSTRING
+
+# Enable Map voting
+MAP_VOTING
