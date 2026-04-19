@@ -1,8 +1,0 @@
-author: CrazyAmphibian
-delete-after: true
-changes:
-- rscadd: Lead can now be used in soldering irons
-- rscadd: Lead now absorbs some power when inside a fission reactor
-- rscadd: Lead now has a sheet form, and can be crafted into a few items.
-- rscadd: lead sheets can be used to upgrade certain suits to be more radiation resistant
-    at the cost of slowing the wearer down.
