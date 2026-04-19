@@ -324,7 +324,7 @@ export const TgsTarget = new Juke.Target({
 });
 
 export const ReleaseTarget = new Juke.Target({
-  dependsOn: [BuildTarget, BuildAllVotingMapsTarget]
+  dependsOn: [BuildTarget, DmBuildAllVotingMapsTarget]
 })
 
 const TGS_MODE = process.env.CBT_BUILD_MODE === 'TGS';
