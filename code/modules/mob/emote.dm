@@ -93,6 +93,147 @@
 	var/location = T ? "[T.x],[T.y],[T.z]" : "nullspace"
 	log_emote("[user.name]/[user.key] (@[location]): [message]")
 
+/datum/emote/doctos
+	key = "doctos"
+	key_third_person = "doctoses"
+	message = "loudly screams \"DOCTOS\"."
+	mob_type_allowed_typelist = list(/mob/living, /mob/dead/observer)
+
+/datum/emote/doctos/run_emote(mob/user)
+	. = ..()
+	var/doctos_state = "normal"
+	var/list/soundlist = list(
+		'sound/voice/emotes/universal/doctos/doctos1.ogg',
+		'sound/voice/emotes/universal/doctos/doctos2.ogg',
+		'sound/voice/emotes/universal/doctos/doctos3.ogg',
+		'sound/voice/emotes/universal/doctos/doctos4.ogg',
+		'sound/voice/emotes/universal/doctos/doctos5.ogg',
+		'sound/voice/emotes/universal/doctos/doctos6.ogg',
+		'sound/voice/emotes/universal/doctos/doctos7.ogg',
+		'sound/voice/emotes/universal/doctos/doctos8.ogg',
+	)
+
+
+	if (user.gender == FEMALE)
+		// >mfw no skin tone in veegee
+		// if(ishuman(user))
+		// 	var/mob/living/carbon/human/H = user
+		// 	H.skin_tone
+		doctos_state = "female"
+		soundlist = list(
+			'sound/voice/emotes/universal/doctos/doctosfemale1.ogg',
+			'sound/voice/emotes/universal/doctos/doctosfemale2.ogg',
+			'sound/voice/emotes/universal/doctos/doctosfemale3.ogg'
+		)
+	else
+		if (prob(1))
+			doctos_state = "caveman"
+			soundlist = list('sound/voice/emotes/universal/doctos/doctoscaveman.ogg')
+
+	var/image/overlay = image(
+		icon = 'icons/mob/emotes/universal/doctos.dmi',
+		icon_state = "[doctos_state]",
+		loc = user.loc,
+		layer = HUD_PLANE,
+		pixel_y = 32
+	)
+	overlay.alpha = 0
+
+	// god knows what the guy who implemented this was doing!
+	// is there a better way
+	for (var/client/C in clients)
+		C.images |= overlay
+
+	animate(overlay, alpha = 255, time = 2)
+
+	playsound(user, pick(soundlist), 30, FALSE)
+
+	spawn(10)
+		animate(overlay, alpha = 0, time = 2)
+		spawn(2)
+		for (var/client/C in clients)
+			C.images -= overlay
+
+/datum/emote/kek
+	key = "kek"
+	key_third_person = "keks"
+	message = "keks."
+	message_mime = "laughs like a frog."
+
+/datum/emote/kek/run_emote(mob/user)
+	. = ..()
+	var/list/soundlist = list(
+		'sound/voice/emotes/universal/kek/kek1.ogg',
+		'sound/voice/emotes/universal/kek/kek2.ogg',
+		'sound/voice/emotes/universal/kek/kek3.ogg',
+		'sound/voice/emotes/universal/kek/kek4.ogg',
+		'sound/voice/emotes/universal/kek/kek5.ogg',
+		'sound/voice/emotes/universal/kek/kek6.ogg'
+	)
+
+	var/image/overlay = image(
+		icon = 'icons/mob/emotes/universal/kek.dmi',
+		icon_state = "kek",
+		loc = user.loc,
+		layer = HUD_PLANE,
+		pixel_y = 32
+	)
+	overlay.alpha = 0
+
+	for (var/client/C in clients)
+		C.images |= overlay
+
+	animate(overlay, alpha = 255, time = 2)
+
+	playsound(user, pick(soundlist), 30, FALSE)
+
+	spawn(10)
+		animate(overlay, alpha = 0, time = 2)
+		spawn(2)
+		for (var/client/C in clients)
+			C.images -= overlay
+
+/datum/emote/geg
+	key = "geg"
+	key_third_person = "gegs"
+	message = "gegs."
+	message_mime = "laughs like a 'jakker."
+
+/datum/emote/geg/run_emote(mob/user)
+	. = ..()
+	var/list/soundlist = list(
+		'sound/voice/emotes/universal/geg/geg1.ogg',
+		'sound/voice/emotes/universal/geg/geg2.ogg',
+		'sound/voice/emotes/universal/geg/geg3.ogg',
+		'sound/voice/emotes/universal/geg/geg4.ogg',
+	)
+
+	var/image/overlay = image(
+		icon = 'icons/mob/emotes/universal/geg.dmi',
+		icon_state = "geg",
+		loc = user.loc,
+		layer = HUD_PLANE,
+		pixel_y = 32,
+		pixel_x = 8
+	)
+	overlay.alpha = 0
+
+	for (var/client/C in clients)
+		C.images |= overlay
+
+	animate(overlay, alpha = 255, time = 2)
+
+	playsound(user, pick(soundlist), 30, FALSE)
+
+	spawn(10)
+		animate(overlay, alpha = 0, time = 2)
+		spawn(2)
+		for (var/client/C in clients)
+			C.images -= overlay
+
+
+
+
 /mob/proc/emote_dead(var/message)
 	if(client.prefs.muted & MUTE_DEADCHAT)
 		to_chat(src, "<span class='warning'>You cannot send deadchat emotes (muted).</span>")
