@@ -1,0 +1,5 @@
+author: SECBATON-GRIFFON
+delete-after: true
+changes:
+- tweak: Wet dry vacuums can now suck reagents up from scattered sand, fruit smudges,
+    pie smudges, fake alien weeds, glue, mucus and robot oil.
