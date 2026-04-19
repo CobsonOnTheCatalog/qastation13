@@ -6,8 +6,8 @@
 #Currently, this is only used by build.cmd and TGS quick setup
 
 # byond version
-#export BYOND_MAJOR=516
-#export BYOND_MINOR=1659
+export BYOND_MAJOR=516
+export BYOND_MINOR=1680
 
 #node version
 export NODE_VERSION=16

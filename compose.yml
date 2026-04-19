@@ -1,0 +1,23 @@
+services:
+  ss13:
+    container_name: "ss13"
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./config:/ss13/config
+      - ./data:/ss13/data
+  db:
+    container_name: "ss13_mariadb"
+    image: mariadb
+    restart: unless-stopped
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_DATABASE=ss13
+      - MYSQL_USER=spessman
+      - MYSQL_PASSWORD=spessman
+    volumes:
+      - database:/var/lib/mysql
+
+volumes:
+  database:
