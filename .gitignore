@@ -5,6 +5,9 @@
 *.lk
 info.json
 
+# This shouldn't stay
+temp.dme
+
 # Temporary file created by the build system
 *.m.dme
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 /**
  * Build script for /tg/station 13 codebase.
  *
@@ -23,6 +24,20 @@ Juke.setup({ file: import.meta.url }).then((code) => {
 });
 
 const DME_NAME = 'vgstation13';
+const maps = [
+  ["RoidStation", 'maps/roidstation.dm'],
+  ["Bagelstation", 'maps/bagelstation.dm'],
+  ["Defficiency", 'maps/defficiency.dm'],
+  ["horizon", 'maps/horizon.dm'],
+  ["line", 'maps/line.dm'],
+  ["lowfatbagel", 'maps/lowfatbagel.dm'],
+  ["Metaclub", 'maps/metaclub.dm'],
+  ["Box Station", 'maps/tgstation.dm'],
+  ["Waystation", 'maps/waystation.dm'],
+  ["wheelstation", 'maps/wheelstation.dm'],
+  ["xoq", 'maps/xoq.dm'],
+  ["Synergy", 'maps/synergy.dm']
+];
 
 export const DefineParameter = new Juke.Parameter({
   type: 'string[]',
@@ -56,6 +71,31 @@ export const DmMapsIncludeTarget = new Juke.Target({
     fs.writeFileSync('_maps/templates.dm', content);
   },
 });
+
+export const DmBuildAllVotingMapsTarget = new Juke.Target({
+  executes: async ({ get }) => {
+    const dmeContent = fs.readFileSync("vgstation13.dme")
+    const strippedDmeContent = dmeContent.toString().replace("#include \"maps\\tgstation.dm\"");
+    for (let selection of maps) {
+      let targetDir = "maps/voting/" + selection[0];
+      let targetOutput = targetDir + "/vgstation13.dmb";
+      let targetFile = "temp.dme";
+      Juke.logger.info("current map target:", targetDir);
+      if (!fs.existsSync(targetDir)) {
+        fs.mkdirSync(targetDir);
+      }
+      let newDmeContent = strippedDmeContent + "#include \"" + selection[1] + "\""
+      fs.writeFileSync(targetFile, newDmeContent);
+      await DreamMaker(`temp.dme`, {
+        defines: ['CBT', ...get(DefineParameter)],
+        warningsAsErrors: get(WarningParameter).includes('error'),
+      });
+      fs.rmSync("temp.dme");
+      fs.rmSync("temp.rsc");
+      fs.renameSync("temp.dmb", targetOutput)
+    }
+  },
+})
 
 export const DmTarget = new Juke.Target({
   parameters: [DefineParameter],
@@ -282,6 +322,10 @@ export const TgsTarget = new Juke.Target({
     prependDefines('TGS');
   },
 });
+
+export const ReleaseTarget = new Juke.Target({
+  dependsOn: [BuildTarget, BuildAllVotingMapsTarget]
+})
 
 const TGS_MODE = process.env.CBT_BUILD_MODE === 'TGS';
 
