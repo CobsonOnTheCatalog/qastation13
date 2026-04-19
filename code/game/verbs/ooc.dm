@@ -12,9 +12,10 @@ var/adminbus_ooc_color
 
 	if(!mob)
 		return
-	if(IsGuestKey(key))
-		to_chat(src, "Guests may not use OOC.")
-		return
+	// Allow guests to use OOC
+	// if(IsGuestKey(key))
+	// 	to_chat(src, "Guests may not use OOC.")
+	// 	return
 
 	// grab prefix before sanitizing
 	// is this bad??
