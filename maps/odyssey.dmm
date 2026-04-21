@@ -46,17 +46,14 @@
 	name = "Engineering Supplies";
 	id_tag = "eng supplies";
 	pixel_y = 25;
-	pixel_x = -5
+	pixel_x = -5;
+	req_one_access_txt = "11"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layered{
 	dir = 10;
 	tag = ""
 	},
 /obj/machinery/camera/autoname,
-/obj/effect/landmark{
-	name = "xeno_spawn";
-	pixel_x = -1
-	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -175,10 +172,6 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
-	},
-/obj/effect/landmark{
-	name = "xeno_spawn";
-	pixel_x = -1
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -2222,10 +2215,6 @@
 	},
 /area/surface/nt_outpost/clinic)
 "he" = (
-/obj/effect/landmark{
-	name = "xeno_spawn";
-	pixel_x = -1
-	},
 /turf/simulated/floor/plating,
 /area/shuttle/odyssey/maintenance/port)
 "hh" = (
@@ -2508,7 +2497,6 @@
 /turf/simulated/floor/shuttle/plating,
 /area/shuttle/supply)
 "iu" = (
-/obj/machinery/door/airlock/engineering,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -2526,6 +2514,7 @@
 	tag = "icon-intact (EAST)"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance_hatch,
 /turf/simulated/floor/plated_catwalk/dark,
 /area/shuttle/odyssey/hallway/starboard)
 "iv" = (
@@ -2597,10 +2586,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/layered{
 	dir = 1;
 	on = 1
-	},
-/obj/effect/landmark{
-	name = "xeno_spawn";
-	pixel_x = -1
 	},
 /turf/simulated/floor/wood,
 /area/shuttle/odyssey/quarters/crew)
@@ -2719,10 +2704,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
 	},
-/obj/effect/landmark{
-	name = "xeno_spawn";
-	pixel_x = -1
-	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -2804,10 +2785,6 @@
 "jr" = (
 /obj/structure/wc/toilet{
 	pixel_y = 8
-	},
-/obj/effect/landmark{
-	name = "xeno_spawn";
-	pixel_x = -1
 	},
 /turf/simulated/floor{
 	icon_state = "freezerfloor"
@@ -4156,6 +4133,8 @@
 	pixel_y = -30;
 	dir = 1
 	},
+/obj/item/weapon/circuitboard/shuttle_control/odyssey,
+/obj/item/weapon/circuitboard/communications/odyssey,
 /turf/simulated/floor/wood,
 /area/shuttle/odyssey/quarters/heads)
 "nU" = (
@@ -5300,15 +5279,10 @@
 	pixel_x = -4;
 	pixel_y = -5
 	},
-/obj/item/weapon/storage/box/flashbangs{
-	pixel_x = 4;
-	pixel_y = 5
-	},
 /obj/item/weapon/storage/box/smokebombs{
 	pixel_x = 5;
 	pixel_y = -5
 	},
-/obj/item/weapon/storage/box/smokebombs,
 /obj/machinery/media/receiver/boombox/wallmount/muzak{
 	pixel_y = -30
 	},
@@ -5409,7 +5383,9 @@
 /turf/simulated/floor/shuttle,
 /area/shuttle/odyssey_transfer)
 "sB" = (
-/obj/machinery/door/airlock/glass_command,
+/obj/machinery/door/airlock/glass_command{
+	req_access_txt = "19"
+	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -5484,8 +5460,8 @@
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/engineering,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance_hatch,
 /turf/simulated/floor/plated_catwalk/dark,
 /area/shuttle/odyssey/hallway/port)
 "sL" = (
@@ -6749,7 +6725,8 @@
 	name = "Starboard Gas Storage Lockdown";
 	id_tag = "starboard gas";
 	pixel_y = -27;
-	pixel_x = 8
+	pixel_x = 8;
+	req_access_txt = "11"
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/odyssey/engineering/gas_storage/starboard)
@@ -7181,7 +7158,8 @@
 	name = "Engineering RC";
 	pixel_y = -30
 	},
-/obj/item/weapon/circuitboard/communications,
+/obj/item/weapon/circuitboard/communications/odyssey,
+/obj/item/weapon/circuitboard/shuttle_control/odyssey,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -7211,7 +7189,8 @@
 	name = "Port Gas Storage Lockdown";
 	id_tag = "port gas";
 	pixel_y = 27;
-	pixel_x = 8
+	pixel_x = 8;
+	req_one_access_txt = "11"
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/odyssey/engineering/gas_storage/port)
@@ -7403,7 +7382,9 @@
 /turf/unsimulated/floor/planetary/concrete,
 /area/shuttle/odyssey_transfer)
 "yM" = (
-/obj/machinery/door/airlock/engineering,
+/obj/machinery/door/airlock/engineering{
+	req_access_txt = "11"
+	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -8171,10 +8152,6 @@
 	icon_state = "0-2";
 	pixel_y = 1
 	},
-/obj/effect/landmark{
-	name = "xeno_spawn";
-	pixel_x = -1
-	},
 /obj/machinery/light_switch{
 	pixel_x = 12;
 	pixel_y = 24
@@ -8363,7 +8340,7 @@
 	},
 /area/surface/nt_outpost/admin)
 "Cb" = (
-/obj/machinery/computer/communications,
+/obj/machinery/computer/communications/odyssey,
 /turf/simulated/floor{
 	icon_state = "dark_navy";
 	tag = "icon-dark_navy (WEST)"
@@ -10559,10 +10536,6 @@
 /obj/machinery/media/receiver/boombox/wallmount/muzak{
 	pixel_x = -30
 	},
-/obj/effect/landmark{
-	name = "xeno_spawn";
-	pixel_x = -1
-	},
 /turf/simulated/floor/wood,
 /area/shuttle/odyssey/quarters/heads)
 "JR" = (
@@ -10779,7 +10752,9 @@
 /turf/unsimulated/floor/planetary/concrete,
 /area/surface/nt_outpost)
 "KB" = (
-/obj/machinery/door/airlock/glass_atmos,
+/obj/machinery/door/airlock/glass_atmos{
+	req_access_txt = "11"
+	},
 /obj/machinery/door/poddoor{
 	density = 0;
 	icon_state = "pdoor0";
@@ -11485,7 +11460,9 @@
 	},
 /area/surface/nt_outpost/clinic)
 "MJ" = (
-/obj/machinery/door/airlock/glass_command,
+/obj/machinery/door/airlock/glass_command{
+	req_access_txt = "19"
+	},
 /obj/machinery/atmospherics/pipe/layer_adapter/scrubbers/hidden{
 	dir = 4
 	},
@@ -11699,7 +11676,9 @@
 /turf/simulated/floor/plating,
 /area/shuttle/odyssey/maintenance/starboard)
 "Nw" = (
-/obj/machinery/door/airlock/engineering,
+/obj/machinery/door/airlock/engineering{
+	req_access_txt = "11"
+	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -12459,7 +12438,9 @@
 /turf/simulated/floor/plating/vox,
 /area/shuttle/trade/start)
 "PS" = (
-/obj/machinery/door/airlock/glass_atmos,
+/obj/machinery/door/airlock/glass_atmos{
+	req_access_txt = "11"
+	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -12876,7 +12857,9 @@
 /turf/simulated/floor/wood,
 /area/derelict/bar)
 "QV" = (
-/obj/machinery/door/airlock/engineering,
+/obj/machinery/door/airlock/engineering{
+	req_access_txt = "11"
+	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
 	d1 = 1;
@@ -14668,7 +14651,9 @@
 /turf/simulated/floor/plating,
 /area/shuttle/odyssey/engineering/engine_room)
 "WH" = (
-/obj/machinery/door/airlock/security,
+/obj/machinery/door/airlock/security{
+	req_access_txt = "1"
+	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -14781,10 +14766,6 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
-	},
-/obj/effect/landmark{
-	name = "xeno_spawn";
-	pixel_x = -1
 	},
 /turf/simulated/floor{
 	icon_state = "dark"

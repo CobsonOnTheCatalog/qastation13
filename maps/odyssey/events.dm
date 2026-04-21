@@ -125,14 +125,17 @@
 
 /datum/odyssey_event/micro_meteors
 	name = "Micro Meteors"
-	required_roll = 20
+	required_roll = 65
 	state_flags = ODYSSEY_STATE_HYPERSPACE
 	announce_message = "Sensors detect incoming micro-debris field. Brace for impact."
 
 /datum/odyssey_event/micro_meteors/execute(datum/shuttle/odyssey/shuttle)
-	var/count = rand(5, 10)
+	var/count = rand(2, 4)
 	for(var/i = 1 to count)
-		shuttle.spawn_vz_meteor(/obj/item/projectile/meteor/small)
+		var/meaty_type = /obj/item/projectile/meteor/small/microdebris
+		if(prob(25))
+			meaty_type = /obj/item/projectile/meteor/small
+		shuttle.spawn_vz_meteor(meaty_type)
 		sleep(rand(3, 5))
 
 /datum/odyssey_event/gib_storm
@@ -209,6 +212,72 @@
 	for(var/i = 1 to count)
 		var/turf/T = pick(space_turfs)
 		new /mob/living/simple_animal/hostile/carp(T)
+
+//////////////////////////////////////////////
+//                                          //
+//          ODYSSEY XENOMORPH               ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                          //
+//////////////////////////////////////////////
+
+/datum/dynamic_ruleset/midround/from_ghosts/faction_based/odyssey_xeno
+	name = "Alien Stowaway"
+	role_category = /datum/role/xenomorph
+	enemy_jobs = list()
+	required_pop = list(0,0,0,0,0,0,0,0,0,0)
+	required_enemies = list(0,0,0,0,0,0,0,0,0,0)
+	required_candidates = 1
+	max_candidates = 1
+	weight = 12
+	weight_category = "Alien"
+	cost = 5
+	requirements = list(20,15,10,10,10,10,10,10,10,10)
+	high_population_requirement = 10
+	logo = "xeno-logo"
+	my_fac = /datum/faction/xenomorph
+
+/datum/dynamic_ruleset/midround/from_ghosts/faction_based/odyssey_xeno/proc/get_valid_spawns()
+	var/list/valid_area_types = list(
+		/area/shuttle/odyssey/engineering,
+		/area/shuttle/odyssey/maintenance/port,
+		/area/shuttle/odyssey/maintenance/starboard,
+		/area/shuttle/odyssey/janitor,
+		/area/shuttle/odyssey/restroom,
+		/area/shuttle/odyssey/quarters/crew,
+		/area/shuttle/odyssey/quarters/heads
+	)
+	var/list/valid_spawns = list()
+	for(var/area/shuttle/odyssey/A in world)
+		if(!(A.type in valid_area_types))
+			continue
+		for(var/turf/simulated/floor/T in A)
+			if(T.density)
+				continue
+			valid_spawns += T
+	return valid_spawns
+
+/datum/dynamic_ruleset/midround/from_ghosts/faction_based/odyssey_xeno/ready(var/forced = 0)
+	var/list/spawns = get_valid_spawns()
+	if(!spawns.len)
+		log_admin("Odyssey xeno ruleset: No valid shuttle spawn turfs found.")
+		message_admins("Odyssey xeno ruleset: No valid shuttle spawn turfs found.")
+		return FALSE
+
+	return ..()
+
+/datum/dynamic_ruleset/midround/from_ghosts/faction_based/odyssey_xeno/generate_ruleset_body(var/mob/applicant)
+	var/list/valid_spawns = get_valid_spawns()
+	if(!valid_spawns.len)
+		return
+	var/turf/spawn_loc = pick(valid_spawns)
+	var/mob/living/carbon/alien/larva/new_xeno = new(spawn_loc)
+	new_xeno.stowaway = TRUE
+	new_xeno.key = applicant.key
+	new_xeno << sound('sound/voice/alienspawn.ogg')
+
+	spawn(rand(90 SECONDS, 120 SECONDS))
+		captain_announce("Unidentified life signs detected aboard the NTEV Odyssey.")
+
+	return new_xeno
 
 #undef ODYSSEY_STATE_HYPERSPACE
 #undef ODYSSEY_STATE_DEEPSPACE
