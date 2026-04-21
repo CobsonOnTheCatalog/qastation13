@@ -1,0 +1,14 @@
+author: west3436
+delete-after: true
+changes:
+- bugfix: The Emergency Shuttle Panel is no longer unusable on Odyssey.
+- bugfix: Reduced micrometeor damage and likelihood while in hyperspace.
+- bugfix: Fixed passive scan not working in hyperspace.
+- bugfix: Stowaway xenos can now only become Hunters.
+- bugfix: Reduced old database reboot time for planetary comms while playing on Odyssey.
+- bugfix: The Bluespace Jump countdown will immediately begin if the comms console
+    breaks.
+- bugfix: The stowaway Xeno will now always spawn on the ship.
+- tweak: Added access requirements to bridge, engineering, security office on Odyssey.
+- tweak: Added backup shuttle computer and comms console boards in two locations to
+    Odyssey.
