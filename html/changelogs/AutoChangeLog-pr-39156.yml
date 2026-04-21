@@ -1,0 +1,9 @@
+author: west3436
+delete-after: true
+changes:
+- bugfix: Fixed the escape pods failing to dock at Centcomm or crash into the Emergency
+    Shuttle on all maps.
+- bugfix: Fixed mined rock turfs at the NT Outpost on Odyssey turning into vacuum
+    turfs.
+- tweak: Added a few more role spawns to Odyssey.
+- tweak: Renamed HOP -> "First Mate", CE -> "Navigator" on Odyssey.
