@@ -1,0 +1,4 @@
+author: Eneocho
+delete-after: true
+changes:
+- bugfix: pAIs can now middle shift click to point like all other mobs.
