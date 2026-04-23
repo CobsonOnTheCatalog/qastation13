@@ -1,0 +1,5 @@
+author: CrazyAmphibian
+delete-after: true
+changes:
+- rscadd: Added gold pans, craftable from a few materials. add water and sand, and
+    watch as it turns into ore.
