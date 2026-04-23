@@ -1,5 +1,0 @@
-author: SECBATON-GRIFFON
-delete-after: true
-changes:
-- rscadd: Round end screens now show a "heatmap" of the station with areas most frequently
-    walked through.
