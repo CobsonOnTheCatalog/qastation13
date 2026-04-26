@@ -100,6 +100,8 @@
 
 	var/datum/virtual_z/v = null // virtual z level
 
+	var/player_entries = 0
+
 /turf/examine(mob/user)
 	..()
 	if(bullet_marks)
@@ -118,7 +120,6 @@
 	footstep_sound = list()
 	footstep_sound_barefoot = list()
 	footstep_sound_claw = list()
-	turf_reagents = list()
 
 	if(skip_turf_init)
 		return
@@ -209,45 +210,53 @@
 		tracks = new typepath(src)
 	tracks.AddTracks(bloodDNA,comingdir,goingdir,bloodcolor,luminous)
 
+var/highest_player_entry = 0
 
 /turf/Entered(atom/movable/A as mob|obj, atom/OldLoc)
 	if(movement_disabled)
 		to_chat(usr, "<span class='warning'>Movement is admin-disabled.</span>")//This is to identify lag problems
 		return
 
-	//footstep decal code
-	if (istype(A,/mob/living/carbon))
-		var/mob/living/carbon/M = A
-		if(!M.on_foot())
-			return ..()
-		if(istype(M, /mob/living/carbon/human))
-			var/mob/living/carbon/human/H = M
+	if(ismob(A))
+		var/mob/M = A
+		if(M.client)
+			player_entries++
+			if(player_entries > highest_player_entry)
+				highest_player_entry = player_entries
 
-			// Tracking blood
-			var/list/bloodDNA = null
-			var/bloodcolor=""
+		//footstep decal code
+		if (iscarbon(M))
+			var/mob/living/carbon/C = M
+			if(!C.on_foot())
+				return ..()
+			if(istype(M, /mob/living/carbon/human))
+				var/mob/living/carbon/human/H = C
 
-			// Do we have shoes?
-			if(H.shoes)
-				var/obj/item/clothing/shoes/S = H.shoes
-				if(S.track_blood && S.blood_DNA)
-					bloodDNA   = S.blood_DNA
-					bloodcolor = S.blood_color
-					S.track_blood = max(round(S.track_blood - 1, 1),0)
-			else
-				if(H.track_blood && H.feet_blood_DNA)
-					bloodDNA   = H.feet_blood_DNA
-					bloodcolor = H.feet_blood_color
-					H.track_blood = max(round(H.track_blood - 1, 1),0)
+				// Tracking blood
+				var/list/bloodDNA = null
+				var/bloodcolor=""
 
-			if (bloodDNA)
-				AddTracks(H.get_footprint_type(),bloodDNA,H.dir,0,bloodcolor,H.luminous_feet()) // Coming
-				if(Adjacent(OldLoc) && istype(OldLoc,/turf))
-					var/turf/from = OldLoc
-					from.AddTracks(H.get_footprint_type(),bloodDNA,0,H.dir,bloodcolor,H.luminous_feet()) // Going
+				// Do we have shoes?
+				if(H.shoes)
+					var/obj/item/clothing/shoes/S = H.shoes
+					if(S.track_blood && S.blood_DNA)
+						bloodDNA   = S.blood_DNA
+						bloodcolor = S.blood_color
+						S.track_blood = max(round(S.track_blood - 1, 1),0)
+				else
+					if(H.track_blood && H.feet_blood_DNA)
+						bloodDNA   = H.feet_blood_DNA
+						bloodcolor = H.feet_blood_color
+						H.track_blood = max(round(H.track_blood - 1, 1),0)
 
-			bloodDNA = null
-	//end footstep decal code
+				if (bloodDNA)
+					AddTracks(H.get_footprint_type(),bloodDNA,H.dir,0,bloodcolor,H.luminous_feet()) // Coming
+					if(Adjacent(OldLoc) && istype(OldLoc,/turf))
+						var/turf/from = OldLoc
+						from.AddTracks(H.get_footprint_type(),bloodDNA,0,H.dir,bloodcolor,H.luminous_feet()) // Going
+
+				bloodDNA = null
+		//end footstep decal code
 
 
 	//THIS IS OLD TURF ENTERED CODE
@@ -294,6 +303,8 @@
 			return
 		if(v.size_x < TRANSITIONEDGE * 2 || v.size_y < TRANSITIONEDGE * 2)
 			v.movementJammed = TRUE // Too small to use any transitioning; fix incorrectly-set param
+			return
+		if(istype(A, /obj/item/projectile/meteor)) // Odyssey's micrometeors spawn from the edge of the map; without this they will immediately transition to a random v-level before striking the shuttle.
 			return
 		if (A.vx() <= TRANSITIONEDGE || A.vx() >= (v.x_max - TRANSITIONEDGE) || A.vy() <= TRANSITIONEDGE || A.vy() >= (v.y_max - TRANSITIONEDGE))
 			var/list/contents_brought = list()
@@ -463,6 +474,49 @@
 /turf/proc/add_dust()
 	return
 
+/// Lightweight turf change for procedural planet generation (space -> unsimulated only).
+/// Skips connections, zones, SSair, universe notifications, holomap, and edge processing.
+/// Falls back to full ChangeTurf if source is not /turf/space.
+/turf/proc/ChangeTurfPlanetGen(var/turf/N)
+	if(!N)
+		return
+	if(!istype(src, /turf/space)) // Safety: fall back for non-space turfs (e.g. ruin turfs)
+		return ChangeTurf(N, defer_edges = TRUE)
+
+	// Remove from old area's turf tracking to prevent stale references
+	var/area/A = loc
+	if(A)
+		A.area_turfs -= src
+
+	var/old_opacity = opacity
+	var/old_dynamic_lighting = dynamic_lighting
+	var/old_affecting_lights = affecting_lights
+	var/old_lighting_overlay = lighting_overlay
+	var/old_corners = corners
+
+	turf_flags |= DEFER_EDGING
+	var/turf/W = new N(src)
+	W.turf_flags |= DEFER_EDGING
+	// Skip initialize() — DEFER_EDGING is set, no movables on fresh space turfs, area tracking done here
+	// Skip levelupdate() — fresh turfs from space have no level-1 objects to hide
+	var/area/WA = W.loc
+	if(WA)
+		WA.area_turfs += W
+
+	has_opaque_atom = opacity
+	if(SSlighting && SSlighting.initialized)
+		lighting_overlay = old_lighting_overlay
+		affecting_lights = old_affecting_lights
+		corners = old_corners
+		if((old_opacity != opacity) || (dynamic_lighting != old_dynamic_lighting))
+			reconsider_lights()
+		if(dynamic_lighting != old_dynamic_lighting)
+			if(dynamic_lighting)
+				lighting_build_overlay()
+			else
+				lighting_clear_overlay()
+	return W
+
 //Creates a new turf
 /turf/proc/ChangeTurf(var/turf/N, var/tell_universe=1, var/force_lighting_update = 0, var/allow = 1,var/defer_edges = FALSE)
 	var/area/original_area=loc
@@ -484,6 +538,7 @@
 	var/old_density = density
 	var/old_holomap_draw_override = holomap_draw_override
 	var/old_registered_events = registered_events
+	var/datum/virtual_z/old_v = v
 
 	var/old_holomap = holomap_data
 //	to_chat(world, "Replacing [src.type] with [N]")
@@ -543,6 +598,7 @@
 		//		zone.SetStatus(ZONE_ACTIVE)
 
 		var/turf/simulated/W = new N(src)
+		W.v = old_v
 		if(defer_edges)
 			W.turf_flags |= DEFER_EDGING
 		if(world.has_round_started())
@@ -570,6 +626,7 @@
 		//		zone.SetStatus(ZONE_ACTIVE)
 
 		var/turf/W = new N(src)
+		W.v = old_v
 		if(defer_edges)
 			W.turf_flags |= DEFER_EDGING
 		if(world.has_round_started())
@@ -991,6 +1048,8 @@
 		return v
 	else
 		for(var/datum/virtual_z/check_vz in map.getAllVLevels())
+			if(check_vz.parent_z?.z != z)
+				continue
 			if(check_vz.x_min <= x && check_vz.x_max >= x && check_vz.y_min <= y && check_vz.y_max >= y)
 				return check_vz
 	return null

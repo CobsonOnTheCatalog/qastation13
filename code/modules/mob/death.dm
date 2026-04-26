@@ -85,6 +85,8 @@ var/global/firstblood = FALSE
 		// Get outta there!
 		ghostize()
 
+	playsound(usr, 'sound/mob/death.ogg', 10, FALSE)
+
 	is_dying = FALSE
 
 /mob/proc/transmog_death()
