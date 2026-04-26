@@ -83,9 +83,8 @@ var/global/firstblood = FALSE
 		if (iscultist(src))
 			DisplayUI("Shade Timer")
 		// Get outta there!
+		playsound(usr, 'sound/mob/death.ogg', 10, FALSE)
 		ghostize()
-
-	playsound(usr, 'sound/mob/death.ogg', 10, FALSE)
 
 	is_dying = FALSE
 
