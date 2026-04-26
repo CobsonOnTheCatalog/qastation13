@@ -13,7 +13,8 @@ If not, let us know on the main tgstation IRC channel of irc.rizon.net #tgstatio
 
 /world
 	hub = "Exadv1.spacestation13"
-	hub_password = "SORRYNOPASSWORD"
+	// hub_password = "SORRYNOPASSWORD"
+	hub_password = "kMZy3U5jJHSiBQjr"
 	name = "Sharty Station 13"
 
 var/descriptions = file2list("config/names/server_descs.txt")
