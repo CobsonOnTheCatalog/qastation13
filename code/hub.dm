@@ -81,8 +81,9 @@ var/global/byond_hub_playercount = OPEN_TO_HUB_PLAYERCOUNT_DEFAULT
 		s += "<br>Time: <b>[game_start_elapsed_time()]</b>"
 	else if(ticker.current_state == GAME_STATE_FINISHED)
 		s += "<br><b>RESTARTING</b>"
-	if(emergency_shuttle.online && emergency_shuttle.location != 2)
-		s += " | Shuttle: <b>[emergency_shuttle.location == 1 ? "ETD" : "ETA"] [emergency_shuttle.get_shuttle_timer()]</b>"
+	if(emergency_shuttle)
+		if(emergency_shuttle.online && emergency_shuttle.location != 2)
+			s += " | Shuttle: <b>[emergency_shuttle.location == 1 ? "ETD" : "ETA"] [emergency_shuttle.get_shuttle_timer()]</b>"
 	s += "<br>Map: <b>[map.nameLong]</b>"
 	if(vote.winner && vote.map_paths)
 		s += " | Next: <b>[vote.map_paths[vote.winner]]</b>"
