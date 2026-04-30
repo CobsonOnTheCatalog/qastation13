@@ -134,7 +134,7 @@
 		icon = 'icons/mob/emotes/universal/doctos.dmi',
 		icon_state = "[doctos_state]",
 		loc = user.loc,
-		layer = HUD_PLANE,
+		layer = ABOVE_HUD_PLANE,
 		pixel_y = 32
 	)
 	overlay.alpha = 0
@@ -175,7 +175,7 @@
 		icon = 'icons/mob/emotes/universal/kek.dmi',
 		icon_state = "kek",
 		loc = user.loc,
-		layer = HUD_PLANE,
+		layer = ABOVE_HUD_PLANE,
 		pixel_y = 32
 	)
 	overlay.alpha = 0
@@ -212,7 +212,7 @@
 		icon = 'icons/mob/emotes/universal/geg.dmi',
 		icon_state = "geg",
 		loc = user.loc,
-		layer = HUD_PLANE,
+		layer = ABOVE_HUD_PLANE,
 		pixel_y = 32,
 		pixel_x = 8
 	)
