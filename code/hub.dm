@@ -20,7 +20,7 @@ If not, let us know on the main tgstation IRC channel of irc.rizon.net #tgstatio
 var/descriptions = file2list("config/names/server_descs.txt")
 var/description = pick(descriptions)
 
-var/global/byond_hub_open = FALSE
+var/global/byond_hub_open = TRUE
 var/global/byond_server_name = DEFAULT_SERVER_NAME
 var/global/byond_server_desc = description
 var/global/byond_hub_playercount = OPEN_TO_HUB_PLAYERCOUNT_DEFAULT
