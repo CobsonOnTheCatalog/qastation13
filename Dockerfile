@@ -56,7 +56,11 @@ WORKDIR /ss13
 
 RUN apt-get install -y --no-install-recommends \
         libssl3:i386 \
-        zlib1g:i386
+        zlib1g:i386 \
+		libmariadb-dev
+
+# dawg look at my database im going to jail
+RUN cp /usr/lib/x86_64-linux/libmariadb.so .
 
 COPY --from=build /deploy ./
 
