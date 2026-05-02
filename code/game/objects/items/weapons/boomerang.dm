@@ -350,9 +350,9 @@
 
 /obj/item/weapon/boomerang/cross/return_check()
 	if (originator && originator.mind)
-		if (istype(originator.mind.faith, /datum/religion/belmont))
+		if (istype(originator.mind.faith, /datum/religion/catholic))
 			return TRUE
-		to_chat(originator, "<span class='rose'>Only a true vampire hunter may use \the [src] to its full potential.</span>")
+		to_chat(originator, "<span class='rose'>Only a true bishop may use \the [src] to its full potential.</span>")
 	return FALSE
 
 /obj/item/weapon/boomerang/cross/throw_impact(var/atom/hit_atom, var/speed, var/mob/user, var/list/impact_whitelist)
