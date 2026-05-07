@@ -71,7 +71,7 @@
 		say(pick("IM A PONY NEEEEEEIIIIIIIIIGH", \
 		"without oxigen blob don't evoluate?", \
 		"CAPTAINS A COMDOM", \
-		"[pick("", "that traitor")] [pick("joerge", "george", "gorge", "gdoruge")] [pick("mellens", "melons", "mwrlins")] is grifing me HAL;P!!!", \
+		"[pick("", "that traitor")] [pick("joerge", "george", "gorge", "gdoruge", "jorge")] [pick("mellens", "melons", "mwrlins", "meleons")] is grifing me HAL;P!!!", \
 		"can u give me [pick("telikesis","halk","eppilapse")]?", \
 		"THe saiyans screwed", \
 		"Bi is THE BEST OF BOTH WORLDS>", \
@@ -79,6 +79,7 @@
 		"stop grifing me!!!!", \
 		"SOTP IT#", \
 		"based and redpilled",\
+		"based and christpilled",\
 		"ho now talking like a milenian piece of shit is too unralistic in the fucking",\
 		"FUS RO DAH", \
 		"fucking 4rries!", \
