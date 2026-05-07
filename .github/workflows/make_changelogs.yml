@@ -1,9 +1,14 @@
 name: Make changelogs
 
 on:
-  push:
+  pull_request_target:
+    types:
+      - closed
     branches:
       - master
+
+permissions:
+  contents: write
 
 jobs:
   make-changelog:
