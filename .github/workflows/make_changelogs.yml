@@ -8,7 +8,7 @@ on:
 jobs:
   MakeCL:
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'vgstation-coders' && !contains(github.event.head_commit.message, '[ci skip]')
+    if: !contains(github.event.head_commit.message, '[ci skip]')
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -26,8 +26,8 @@ jobs:
         env:
           #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} Use this instead if you have unprotected branches
           GITHUB_TOKEN: ${{ secrets.CL_TOKEN }}
-          GIT_EMAIL: "misterserver123@gmail.com"
-          GIT_NAME: "D3athrow-Issues"
+          GIT_EMAIL: "256854404+autojanny[bot]@users.noreply.github.com"
+          GIT_NAME: "AutoJanny[bot]"
         run: python tools/changelog/gen_cl.py
       - name: Trigger compile changelog
         uses: peter-evans/repository-dispatch@v3
