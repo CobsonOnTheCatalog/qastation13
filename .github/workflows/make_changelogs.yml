@@ -6,7 +6,7 @@ on:
       - Bleeding-Edge
 
 jobs:
-  MakeCL:
+  make-changelog:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
