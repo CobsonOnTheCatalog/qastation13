@@ -85,7 +85,7 @@ write_cl["changes"] = changes
 if write_cl["changes"]:
     yaml = YAML()
     changelog_path = Path(f"html/changelogs/AutoChangeLog-pr-{pr_number}.yml")
-    
+
     with changelog_path.open("w") as cl_file:
         yaml.dump(write_cl, cl_file)
 
@@ -94,7 +94,7 @@ if write_cl["changes"]:
         changelog_path.as_posix(),
         f"Automatic changelog generation for PR #{pr_number} [ci skip]",
         content=changelog_path.read_text(),
-        branch="Bleeding-Edge",
+        branch="master",
         committer=InputGitAuthor(git_name, git_email),
     )
     print("Done!")
